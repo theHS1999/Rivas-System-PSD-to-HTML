@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>شهرداری سنگر</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/credentials.css">
+    <link rel="stylesheet" href="css/style-intro.css">
+</head>
+<body>
+<!-------------------- Navbar -------------------->
+<div class="site-navbar">
+    <div class="container-fluid">
+        <div class="dropdown-nav-menu">
+            <a class="nav-dropdown">
+                منو اصلی سایت
+                <img src="img/down-caret.png" alt="" class="caret" id="navbar-drop-caret">
+            </a>
+            <ul class="dropdown-nav-items">
+
+            </ul>
+        </div>
+        <ul class="nav-items">
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    خانه
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    شهر رشت
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-hover">
+                    شهرداری سنگر
+                </a>
+                <div class="dropdown-menu">
+                    <ul class="dropdown-list">
+                        <li class="dropdown-item">
+                            <a href="#" class="nav-link">
+                                زیرمنو اول
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="nav-link">
+                                زیرمنو دوم
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="nav-link">
+                                زیرمنو سوم
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    درباره ما
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    تماس با ما
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-------------------- Slides -------------------->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="#" class="slide-link">
+                <div class="image-container">
+                    <img src="img/intro/slide-pic-1.jpg" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#" class="slide-link">
+                <div class="image-container">
+                    <img src="img/intro/slide-pic-2.jpg" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#" class="slide-link">
+                <div class="image-container">
+                    <img src="img/intro/slide-pic-3.jpg" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--------------- Add Pagination --------------->
+    <div class="swiper-pagination"></div>
+
+    <!--------------- Add Navigation --------------->
+    <div class="slide-navigation navigation-next">
+        <i class="fal fa-chevron-circle-left"></i>
+    </div>
+    <div class="slide-navigation navigation-prev">
+        <i class="fal fa-chevron-circle-right"></i>
+    </div>
+
+</div>
+
+
+<!-------------------- Footer -------------------->
+<footer class="intro-footer">
+    <div class="container">
+        <div class="logo-container">
+            <a href="#">
+                <img src="img/intro/footer-logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="button-container">
+            <div class="button-holder">
+                <img src="img/intro/button-holder.png" alt="">
+            </div>
+            <button class="enter-site-button">
+                ورود به سایت
+            </button>
+            <div class="button-holder">
+                <img src="img/intro/button-holder.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        &#169;
+        COPYRIGHT
+        <a href="#">SANGARCITY.IR</a>
+        2020
+    </div>
+</footer>
+
+
+<!-------------------- Scripts -------------------->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/main.js"></script>
+<script>
+    AOS.init();
+
+
+    var swiper = new Swiper('.swiper-container', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.navigation-next',
+            prevEl: '.navigation-prev',
+        },
+    });
+</script>
+</body>
+</html>

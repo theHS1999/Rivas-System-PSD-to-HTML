@@ -1,0 +1,132 @@
+@font-face {
+  font-family: Traffic;
+  src: url("../fonts/Traffic.eot") format("eot"), url("../fonts/Traffic.ttf") format("truetype"), url("../fonts/Traffic.woff") format("woff"); }
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%; }
+
+body {
+  background-image: url("../img/intro/background.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.clouds-container {
+  background-image: url("../img/intro/clouds.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  text-align: center;
+  z-index: -9999; }
+  .clouds-container .logo-container {
+    height: 50%;
+    z-index: -8000; }
+    .clouds-container .logo-container img {
+      height: 100%; }
+  .clouds-container .departments {
+    height: 88%;
+    margin: -347px 0 0 0; }
+    .clouds-container .departments .department {
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      text-align: center;
+      padding: 0;
+      z-index: 9999; }
+      .clouds-container .departments .department#fazelab {
+        background-image: url("../img/intro/fazelab-background.png"); }
+      .clouds-container .departments .department#omran {
+        background-image: url("../img/intro/omran-background.png"); }
+      .clouds-container .departments .department .logo-container {
+        height: 580px;
+        margin-bottom: 20px;
+        text-align: center; }
+        .clouds-container .departments .department .logo-container img {
+          height: 100%;
+          object-fit: cover; }
+      .clouds-container .departments .department .button {
+        font-family: Traffic, 'BTraffic', Tahoma;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 30px;
+        padding: 0 20px;
+        min-width: 150px;
+        height: 64px;
+        line-height: 64px;
+        display: inline-block;
+        margin: 0 20px;
+        border-radius: 32px;
+        transition: all .2s;
+        transform: scale(1); }
+        .clouds-container .departments .department .button:hover {
+          transform: scale(1.05); }
+        .clouds-container .departments .department .button.omran-button {
+          background-color: #221742;
+          border: 4px solid #edab16; }
+        .clouds-container .departments .department .button.fazelab-button {
+          background-color: #042b41;
+          border: 4px solid #0da1e0; }
+        .clouds-container .departments .department .button.farsi {
+          line-height: 50px;
+          font-weight: bold;
+          position: relative;
+          bottom: 8px; }
+
+@media (max-width: 1400px) {
+  .clouds-container .departments {
+    margin-top: -292px; }
+
+  .clouds-container .departments .department .logo-container {
+    height: 540px; } }
+@media (max-width: 1200px) {
+  .clouds-container .departments .department .logo-container {
+    height: 500px; } }
+@media (max-width: 960px) {
+  .clouds-container .departments {
+    height: 66%;
+    margin-top: -250px; }
+
+  .clouds-container .departments .department .logo-container {
+    height: 450px;
+    margin-top: 80px; }
+
+  .clouds-container .departments .department .button {
+    margin: 0 5px; } }
+@media (max-width: 720px) {
+  .clouds-container .departments {
+    height: 80%;
+    margin-top: -70px; }
+
+  .clouds-container .departments .department#omran {
+    background-size: contain; }
+
+  .clouds-container .departments .department .logo-container {
+    height: 230px;
+    margin-bottom: 10px;
+    margin-top: -50px; }
+
+  .clouds-container .departments .department .button {
+    min-width: 90px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 20px; }
+
+  .clouds-container .departments .department .button.farsi {
+    line-height: 32px;
+    bottom: 5px; } }
+@media (max-width: 420px) {
+  .clouds-container .logo-container {
+    height: 29%; }
+
+  .clouds-container .departments {
+    height: 80%;
+    margin-top: 0; }
+
+  .clouds-container .departments .department .logo-container {
+    height: 350px;
+    margin-top: 35px; } }
+
+/*# sourceMappingURL=style.css.map */

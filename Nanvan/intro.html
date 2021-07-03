@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>نانوان</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="intro">
+
+
+<div class="line-top"></div>
+
+<!-------------------- Slider -------------------->
+<div class="swiper-container main-slides">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="#" class="slide-link">
+                <div class="image-container">
+                    <img src="img/slide-pic.jpg" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#" class="slide-link">
+                <div class="image-container">
+                    <img src="img/slide-pic.jpg" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#" class="slide-link">
+                <div class="image-container">
+                    <img src="img/slide-pic.jpg" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--------------- Add Pagination --------------->
+    <div class="swiper-pagination main-slide-pagination"></div>
+
+    <!--------------- Add Navigation --------------->
+    <div class="main-slide-navigation main-slide-navigation-next">
+        <i class="fas fa-chevron-double-left"></i>
+    </div>
+    <div class="main-slide-navigation main-slide-navigation-prev">
+        <i class="fas fa-chevron-double-right"></i>
+    </div>
+
+</div>
+
+<!-------------------- Coming Soon Bar -------------------->
+<div class="coming-soon">
+    <div class="coming-soon-text"></div>
+</div>
+
+<!-------------------- Images -------------------->
+<div class="image-gallery">
+    <div class="swiper-container gallery-slide">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#" class="slide-link">
+                    <img src="img/image-1.jpg" alt="">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="slide-link">
+                    <img src="img/image-2.jpg" alt="">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="slide-link">
+                    <img src="img/image-3.jpg" alt="">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="slide-link">
+                    <img src="img/image-4.jpg" alt="">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="slide-link">
+                    <img src="img/slide-pic.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <!--------------- Add Navigation --------------->
+        <div class="gallery-navigation gallery-navigation-next">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="gallery-navigation gallery-navigation-prev">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+</div>
+
+<!-------------------- Footer -------------------->
+<footer class="intro-footer">
+    <div class="footer-content">
+        <a href="#" class="footer-link">
+            <i class="far fa-globe"></i>
+            NANVAN.IR
+        </a>
+    </div>
+    <div class="footer-content">
+        <a href="#" class="footer-link">
+            <i class="fab fa-instagram"></i>
+            NANVAN.BAKERY
+        </a>
+    </div>
+</footer>
+
+
+<!-------------------- Scripts -------------------->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.main-slides', {
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.main-slide-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.main-slide-navigation-next',
+            prevEl: '.main-slide-navigation-prev',
+        },
+    });
+
+    var gallerySlides = new Swiper('.gallery-slide', {
+        slidesPerView: 4,
+        spaceBetween: 15,
+        loop: true,
+        navigation: {
+            nextEl: '.gallery-navigation-next',
+            prevEl: '.gallery-navigation-prev',
+        },
+    });
+
+    function setGallerySlide() {
+        let width = $(window).width();
+        console.log(width);
+        if (width < 420) {
+            gallerySlides.destroy();
+            gallerySlides = new Swiper('.gallery-slide', {
+                loop: true,
+                navigation: {
+                    nextEl: '.gallery-navigation-next',
+                    prevEl: '.gallery-navigation-prev',
+                },
+            });
+        }
+        else if(width < 720 && width > 420) {
+            gallerySlides.destroy();
+            gallerySlides = new Swiper('.gallery-slide', {
+                slidesPerView: 2,
+                spaceBetween: 15,
+                loop: true,
+                navigation: {
+                    nextEl: '.gallery-navigation-next',
+                    prevEl: '.gallery-navigation-prev',
+                },
+            });
+        } else {
+            gallerySlides.destroy();
+            gallerySlides = new Swiper('.gallery-slide', {
+                slidesPerView: 4,
+                spaceBetween: 15,
+                loop: true,
+                navigation: {
+                    nextEl: '.gallery-navigation-next',
+                    prevEl: '.gallery-navigation-prev',
+                },
+            });
+        }
+    }
+
+    setGallerySlide();
+
+    $(window).resize(function () {
+        setGallerySlide();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>صفحه مقالات</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!---------------------- header ---------------------->
+<header class="header">
+    <!------------ top bar ------------>
+    <div class="top-part">
+        <!------- search ------->
+        <div class="search-section">
+            <form action="">
+                <input type="search" id="search" name="search" placeholder="عبارت جستجو">
+                <button type="submit" class="search-icon">
+                    <img src="img/search-icon.png" alt="">
+                </button>
+            </form>
+        </div>
+
+        <!------- themes (contrasts) ------->
+        <div class="theme-section">
+            <a href="#" class="theme" id="black-contrast"></a>
+            <a href="#" class="theme" id="main"></a>
+            <a href="#" class="theme" id="yellow-contrast"></a>
+        </div>
+
+        <!------- icons ------->
+        <div class="icons-section">
+            <ul class="icons-list">
+                <li class="icon">
+                    <a href="#">
+                        <img src="img/real-size.png" alt="">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <img src="img/zoom-out.png" alt="">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <img src="img/zoom-in.png" alt="">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <img src="img/lang-icon.png" alt="">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <img src="img/rss-icon.png" alt="">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <img src="img/faq-icon.png" alt="">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <img src="img/login-icon.png" alt="">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <img src="img/email-icon.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!------------ logos section ------------>
+    <div class="logos-section">
+        <div class="logo right-logo">
+            <img src="img/header-logo-right.png" alt="">
+        </div>
+        <div class="logo left-logo">
+            <img src="img/header-logo-left.png" alt="">
+        </div>
+    </div>
+</header>
+
+
+<!---------------------- navbar ---------------------->
+<nav class="navbar navbar-expand-md">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        منو اصلی سایت
+        <span class="navbar-toggler-icon">
+                <img src="img/caret-down.png" alt="">
+            </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">
+                    صفحه اصلی
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    درباره ما
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="productsDropdown"
+                   role="button" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    محصولات
+                </a>
+                <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                    <a class="dropdown-item" href="#">
+                        شیر دستشویی
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        دوش حمام
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        توالت فرنگی
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    کاتالوگ محصولات
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    فروشگاه
+                </a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    اخبار
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    پیگیری سفارش
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    تماس با ما
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!---------------------- article section ---------------------->
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-lg-3 aside order-1 order-md-0">
+            <div class="list">
+                <ul>
+                    <li>
+                        <a href="#">
+                            >
+                            درباره شرکت
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            >
+                            ثبت دامنه و میزبانی وب
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            >
+                            سفارش خدمات
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            >
+                            اخبار
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            >
+                            مقالات
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            >
+                            پرسشهای متداول
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            >
+                            درخواست همکاری
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            >
+                            پشتیبانی
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            >
+                            تماس با ما
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="side-note">
+                <div class="title">
+                    عنوان متن
+                </div>
+                <div class="text">
+                    اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن
+                    های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند. لورم ایپسوم یا طرح‌نما
+                    (به انگلیسی: Lorem ipsum) متنی ساختگی و بدون معنی است که برای امتحان فونت
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 col-lg-9 blog order-0 order-md-1">
+            <article class="article">
+                <div class="title-section">
+                    <div class="blog-title-frame">
+                        <img src="img/blog-title-frame-right.png" alt="">
+                    </div>
+                    <h1 class="title">
+                        عنوان مقاله
+                    </h1>
+                    <div class="blog-title-frame">
+                        <img src="img/blog-title-frame-left.png" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                        از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                        است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                        می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با
+                        نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+                        در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد
+                        نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                    </p>
+                    <div class="image-container">
+                        <img src="img/sample.jpeg" alt="">
+                    </div>
+                    <p>
+                        اگر شما یک طراح هستین و یا با طراحی های
+                        گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.
+                        لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) متنی ساختگی و بدون معنی است که
+                        برای امتحان فونت و یا پر کردن فضا در یک طراحی گرافیکی و یا صنعت چاپ استفاده میشود.
+                        طراحان وب و گرافیک از این متن برای پرکردن صفحه و ارائه شکل کلی طرح استفاده می‌کنند.
+                        <br>
+                        طراحان سایت هنگام طراحی قالب سایت معمولا با این موضوع رو
+                        برو هستند که محتوای اصلی صفحات آماده نیست. در نتیجه طرح کلی دید درستی به کار فرما
+                        نمیدهد. اگر طراح بخواهد دنبال متن های مرتبط بگردد تمرکزش از روی کار اصلی برداشته
+                        میشود و اینکار زمان بر خواهد بود. همچنین طراح به دنبال این است که پس از ارایه کار
+                        نظر دیگران را در مورد طراحی جویا شود و نمی‌خواهد افراد روی متن های موجود تمرکز کنند.
+                        <br>
+                        از آنجا که لورم ایپسوم، شباهت زیادی به متن های واقعی دارد، طراحان معمولا از لورم ایپسوم استفاده
+                        میکنند تا فقط به مشتری یا کار فرما نشان دهند که قالب طراحی شده بعد از اینکه متن
+                        در آن قرار میگرد چگونه خواهد بود و فونت ها و اندازه ها چگونه در نظر گرفته شده است.
+                        <br>
+                        نکته بعدی در مورد متن ساختگی لورم ایپسوم این است که بعضی از طراحان
+                        وبسایت و گرافیست کاران بعد از آنکه قالب و محتوای مورد نظرشون را ایجاد کردند از یاد
+                        می‌برند که متن لورم را از قسمتهای مختلف سایت حذف کنند و یا با متن دیگری جایگزین کنند.
+                        به همین دلیل اغلب اوقات ما با وبسایتهایی مواجه می‌شویم که در گوشه و کنار صفحات آنه
+                        ا متن لورم ایپسوم هنوز وجود دارد و حذف نشده است که این نشان دهنده بی توجهی طراحان است.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</div>
+
+<!---------------------- footer ---------------------->
+<footer class="footer">
+    <div class="top-part">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="order-2 order-lg-1 col-sm-6 col-lg-3 contact-info">
+                    <div class="contact">
+                            <span class="icon">
+                                <img src="img/footer-address.png" alt="">
+                            </span>
+                        <span class="text">
+                                آدرس:کـیلومتر 7 جـاده لاکـان
+                                1000 مــتـر بعد از لاکانــشهر
+                            </span>
+                    </div>
+                    <div class="contact">
+                            <span class="icon">
+                                <img src="img/footer-phone.png" alt="">
+                            </span>
+                        33403262-33403272
+                        33403262-33403272
+                    </div>
+                    <div class="contact english">
+                            <span class="icon">
+                                <img src="img/footer-instagram.png" alt="">
+                            </span>
+                        SHIRALAT_GHAHREMAN_GUILAN
+                    </div>
+                    <div class="contact english">
+                            <span class="icon">
+                                <img src="img/footer-telegram.png" alt="">
+                            </span>
+                        SHIRALAT_GHAHREMAN_GUILAN
+                    </div>
+                </div>
+                <div class="order-1 order-lg-2 col-sm-12 col-lg-6 logo">
+                    <a href="#">
+                        <img src="img/footer-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="order-3 col-sm-6 col-lg-3 counter">
+                    <div>
+                        شـمــارنــده:
+                    </div>
+                    <ul>
+                        <li>
+                            بازدید امروز:
+                            355
+                        </li>
+                        <li>
+                            بازدید هفته:
+                            5232
+                        </li>
+                        <li>
+                            بازدید ماه:
+                            885596
+                        </li>
+                        <li>
+                            کاربران آنلاین:
+                            56
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-part">
+        CORYRIGHT
+        <span>&#xa9</span>
+        IMANITC.IR
+        2020
+    </div>
+</footer>
+
+<!---------------------- scripts ---------------------->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script>
+    $(window).resize(function() {
+        $(".dropdown").mouseenter(function() {
+            $(this).attr("aria-expanded", "true");
+            $(this).find(".dropdown-menu").addClass("show");
+        });
+        $(".dropdown").mouseleave(function() {
+            $(this).attr("aria-expanded", "false");
+            $(this).find(".dropdown-menu").removeClass("show");
+        });
+    });
+    $(document).on("click", ".navbar-toggler", function () {
+        if(!$(this).hasClass("collapsed")) {
+            $(this).find(".navbar-toggler-icon").addClass("open");
+        } else {
+            $(this).find(".navbar-toggler-icon").removeClass("open");
+        }
+    });
+    if($(window).width() > 720) {
+        $(".dropdown").mouseenter(function() {
+            $(this).attr("aria-expanded", "true");
+            $(this).find(".dropdown-menu").addClass("show");
+        });
+        $(".dropdown").mouseleave(function() {
+            $(this).attr("aria-expanded", "false");
+            $(this).find(".dropdown-menu").removeClass("show");
+        });
+    }
+</script>
+
+</body>
+</html>

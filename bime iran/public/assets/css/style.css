@@ -1,0 +1,209 @@
+
+@font-face {
+    font-family: yekan;
+    src: url('../../../assets/fonts/BYekan.eot?#') format('eot'),  /* IE6–8 */
+    url('../../../assets/fonts/BYekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../../../assets/fonts/BYekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+body{
+    font-family: yekan,sans-serif;
+    font-size: 13px;
+    direction: rtl;
+    text-align: center;
+    background: url(../../../assets/img/banner1.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+
+}
+.input-group{
+    direction: ltr
+}
+.navbar{
+    background:#094F95;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+.navbar-nav{
+    margin: 0px -15px;
+}
+a:hover{
+    text-decoration: none;
+}
+.navbar-default{
+    border: none;
+}
+.navbar-default .navbar-nav > li > a{
+    color: white;
+}
+.navbar-default .navbar-nav > li > a:hover{
+    background-color: #0C9CE4;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+    background-color: #0C9CE4;
+    color: white;
+}
+.btn{
+    font-size: 13px;
+
+}
+.control-label{
+    float: right;
+    padding: 5px;
+}
+.form-control{
+    font-size: 12px;
+
+}
+
+.form-group{
+    float: right;
+}
+.row{
+    margin: 0px;
+}
+table tr td{
+    border-color: black;
+}
+label{
+    float: right;
+}
+
+.user{
+    list-style: none;
+    font-family: yekan, Sans-Serif;
+    font-size: 13px;
+}
+.user li{
+    float: left;
+}
+.user li div{
+    line-height: 30px;
+}
+.star{
+    color: red;
+}
+
+.input-group-addon:first-child{
+    border-right:1px solid #ccc;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}
+.input-group-addon{
+    padding: 6px 2px;
+    font-size: 12px;
+}
+.myaddon{
+    display: block;
+    width: 100%;
+border-bottom: none;
+
+}
+.myinput{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+    padding: 5px;
+}
+.bold{
+    font-weight: bold;
+    font-size: 14px;
+
+}
+.table{
+    margin-bottom: 0px;
+}
+.breadcrumb{
+    text-align: right;
+    direction: ltr;
+}
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:first-child > .btn-group:not(:first-child) > .btn{
+    text-align: right;
+}
+.has-feedback .form-control{
+    padding-right: 6px;
+}
+.has-feedback label ~ .form-control-feedback{
+    top:28px;
+}
+.form-control-feedback {
+    left: 0px;
+}
+.glyphicon{
+    top:4px;
+    margin-left:4px;
+}
+.tooltip{
+    font-family: yekan;
+}
+.info{
+    font-weight: bold;
+}
+hr{
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+.sidemenu{
+    text-align: right;
+    list-style: none;
+    padding-right: 0px;
+}
+.sidemenu li{
+    min-height: 25px;
+    border: 1px solid transparent;
+}
+.sidemenu li a{
+    color: black;
+}
+.slidemenu li:hover{
+
+    border: 1px solid #0C9CE4;
+}
+.sidemenu li a:hover{
+
+    font-weight: bold;
+}
+.label{
+    font-weight: normal;
+    padding: 1px 3px 1px 3px;
+    margin: 1px;
+}
+.glyphicon:hover{
+    cursor: pointer;
+}
+.s{
+    margin-top: -12px;
+    text-align: left;
+    margin-left: -10px;
+    direction: rtl;
+}
+.search-result{
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0;
+    text-align: right;
+}
+.search-result > li{
+    padding: 3px 5px;
+}
+.search-result li:hover{
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+#table .form-control{
+    padding: 6px 1px;
+}
+::selection{
+    background-color: #337ab7;
+    color: white;
+}
+::-moz-selection {
+    background-color: #337ab7;
+    color: white;
+}

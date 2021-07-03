@@ -1,0 +1,82 @@
+@font-face {font-family: 'Yekan'; src: url('BYekan.eot?#') format('eot'), url('BYekan.woff') format('woff'), url('BYekan.ttf') format('truetype');}
+
+.narinformcreator * {padding: 0; margin: 0; border: 0; outline: 0; font-weight: normal; font-style: normal; list-style: none; text-decoration: none;}
+
+.narinformcreator {direction: rtl; min-width: 920px; padding: 4px; font-family: Yekan, Tahoma, Geneva, sans-serif; font-size: 13px; background: #fff;}
+.narinformcreator :lang(en), .narinformcreator input[type=text].number {direction: ltr;}
+.narinformcreator h1 {font-size: 19px; font-weight: bold;}
+.narinformcreator h2 {font-size: 18px; font-weight: bold;}
+.narinformcreator h3 {font-size: 14px; font-weight: bold;}
+.narinformcreator h4 {font-size: 13px; font-weight: bold;}
+.narinformcreator h5 {font-size: 12px; font-weight: bold;}
+
+.narinformcreator .proto {display: none !important;}
+.narinformcreator .section {padding: 4px;}
+.narinformcreator .control {position: relative;}
+.narinformcreator .fieldset {background: #f8f8f8; margin: 4px 0;}
+.narinformcreator .fieldset .opt-spec-params {margin-right: 120px; background: #f1f1f1;}
+.narinformcreator .fieldset .opt-spec-params .opt-spec-params {background: #eaeaea;}
+.narinformcreator .fieldset .opt-spec-params .params {padding: 4px; display: none;}
+
+.narinformcreator p {padding: 2px; margin: 1px 0; line-height: 24px;}
+.narinformcreator label span {display: inline-block; width: 110px; height: 24px; text-align: left; padding: 0 4px; vertical-align: top;}
+.narinformcreator label input[type=checkbox]+span {width: auto; min-width: 165px; text-align: right;}
+.narinformcreator label input[type=checkbox] {margin-right: 118px;}
+.narinformcreator strong {color: #f00;}
+.narinformcreator em {color: #666;}
+.narinformcreator abbr {font-family: Tahoma, Geneva, sans-serif; vertical-align: top;}
+.narinformcreator b {color: #000; padding: 0 1px;}
+.narinformcreator i {font-style: italic;}
+
+.narinformcreator .conflict {background: #ffb3d9;}
+.narinformcreator .invalid {background: #ffd9b2;}
+
+.narinformcreator .options .wrapper {position: relative; display: inline-block; padding: 4px 0 4px 186px; margin: 2px 0; background: #f2f2f2;}
+.narinformcreator .options li {position: relative;}
+.narinformcreator .options p {display: inline-block;}
+.narinformcreator .options label span {width: 110px;}
+.narinformcreator .options .toolbox {padding-top: 10px;}
+
+.narinformcreator .toolbox {padding: 4px; position: absolute; top: 0; left: 0;}
+.narinformcreator .toolbox a.icon {margin: 0 1px;}
+
+.narinformcreator a.icon {display: inline-block; width: 16px; height: 16px; background: url(narinformcreator-icons.png?v=2) no-repeat;}
+.narinformcreator a.icon[href="#default"] {background-position: 0 0;}
+.narinformcreator .default a.icon[href="#default"] {background-position: 0 -16px;}
+.narinformcreator a.icon[href|="#add"] {background-position: 0 -32px;}
+.narinformcreator a.icon[href|="#remove"] {background-position: 0 -48px;}
+.narinformcreator a.icon[href|="#up"] {background-position: 0 -64px;}
+.narinformcreator a.icon[href|="#down"] {background-position: 0 -80px;}
+.narinformcreator a.icon[href|="#refresh"] {background-position: 0 -96px;}
+.narinformcreator a.icon:focus {outline: 1px solid #00b3ff;}
+
+.narinformcreator .select-slave-options > * {vertical-align: middle;}
+.narinformcreator .select-slave-options h4 {display: inline-block; margin-right: 4px;}
+.narinformcreator .option-sets .options {margin-top: 6px;}
+
+.narinformcreator .drop-down {position: absolute; display: inline-block; padding: 1px 0; background: #fff; border: 1px solid #bababa; -webkit-box-shadow: 2px 2px 4px 1px #ababab; -moz-box-shadow: 2px 2px 4px 1px #ababab; box-shadow: 2px 2px 4px 1px #ababab;}
+.narinformcreator .drop-down a {display: block; padding: 2px 8px; color: #000; cursor: default;}
+.narinformcreator .drop-down a:hover, .narinformcreator .drop-down a:focus {color: #000; background: #efefef;}
+
+.narinformcreator .submit button {vertical-align: top;}
+.narinformcreator .submit p {display: inline-block; padding-right: 8px;}
+.narinformcreator .submit p.wait {color: #888;}
+.narinformcreator .submit p.success {color: #080;}
+.narinformcreator .submit p.error {color: #800;}
+
+.narinformcreator a {color: #0e6488;}
+.narinformcreator a:hover, .narinformcreator a:focus {color: #00b3ff;}
+
+.narinformcreator input, .narinformcreator textarea, .narinformcreator select  {font-family: Tahoma, Geneva, sans-serif; font-size: 13px;}
+.narinformcreator button {font-family: Yekan, Tahoma, Geneva, sans-serif; font-size: 13px; padding: 1px 12px; background: #f2f2f2; color: #0e6488; border: 1px solid #0e6488;}
+.narinformcreator button:active {padding: 1px 13px 1px 11px; background: #eaeaea; color: #0e6466; border-color: #0e6466;}
+.narinformcreator button[disabled] {color: #888; border-color: #888; background: #f2f2f2; padding: 1px 12px;}
+.narinformcreator input[type=text] {width: 180px; height: 18px; line-height: 18px; padding: 2px; vertical-align: middle;}
+.narinformcreator input[type=text][size] {width: auto;}
+.narinformcreator select {min-width: 186px; height: 24px; line-height: 24px; vertical-align: middle;}
+.narinformcreator .multi-inp select {min-width: 0;}
+.narinformcreator textarea {width: 180px; height: 60px; line-height: 18px; padding: 2px;}
+.narinformcreator input[type=checkbox] {width: 13px; height: 13px; vertical-align: bottom; position: relative; top: -4px;}
+.narinformcreator input[type=text], .narinformcreator textarea, .narinformcreator select {border: 1px solid #0e6488;}
+.narinformcreator input[type=text]:focus, .narinformcreator textarea:focus, .narinformcreator select:focus {border-color: #00b3ff; -webkit-box-shadow: 0 0 2px 1px #ccf; -moz-box-shadow: 0 0 2px 1px #ccf; box-shadow: 0 0 2px 1px #ccf;}
+.narinformcreator input[type=checkbox]:focus {outline: 1px solid #00b3ff;}

@@ -1,0 +1,155 @@
+html, body {
+  font-family: 'BNazanin', 'B Nazanin', Tahoma;
+  direction: rtl;
+  text-align: right;
+  background-color: #e0dcdc; }
+
+.site-navbar {
+  position: relative;
+  margin-bottom: 0; }
+
+.swiper-container {
+  position: relative; }
+  .swiper-container .swiper-wrapper .swiper-slide .slide-link {
+    display: block; }
+    .swiper-container .swiper-wrapper .swiper-slide .slide-link .image-container {
+      width: 100%; }
+      .swiper-container .swiper-wrapper .swiper-slide .slide-link .image-container img {
+        width: 100%;
+        object-fit: cover; }
+  .swiper-container .slide-navigation {
+    background-color: rgba(127, 127, 127, 0.5);
+    position: absolute;
+    height: 75px;
+    line-height: 65px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 65px;
+    transition: all .3s;
+    z-index: 15; }
+    .swiper-container .slide-navigation:hover {
+      color: #b4d336; }
+      .swiper-container .slide-navigation:hover.swiper-button-disabled {
+        background-color: rgba(127, 127, 127, 0.5);
+        color: #ffffff; }
+    .swiper-container .slide-navigation.swiper-button-disabled {
+      opacity: .5;
+      cursor: unset; }
+    .swiper-container .slide-navigation.navigation-next {
+      left: 0;
+      padding: 4px 5px 4px 10px;
+      border-radius: 0 20px 20px 0; }
+    .swiper-container .slide-navigation.navigation-prev {
+      right: 0;
+      padding: 4px 10px 4px 5px;
+      border-radius: 20px 0 0 20px; }
+  .swiper-container .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #b4d336;
+    opacity: 1;
+    background-color: transparent; }
+    .swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: #b4d336; }
+
+.intro-footer {
+  background-image: url("../img/intro/footer-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px 0; }
+  .intro-footer .container {
+    height: 100%; }
+    .intro-footer .container .logo-container {
+      width: 100%;
+      height: 284px;
+      margin-bottom: 20px; }
+      .intro-footer .container .logo-container a {
+        display: block;
+        height: 100%; }
+        .intro-footer .container .logo-container a img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+    .intro-footer .container .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .intro-footer .container .button-container .enter-site-button {
+        background: #b4d336;
+        background: -moz-linear-gradient(90deg, #b4d336 0%, #009948 50%, #b4d336 100%);
+        background: -webkit-linear-gradient(90deg, #b4d336 0%, #009948 50%, #b4d336 100%);
+        background: linear-gradient(90deg, #b4d336 0%, #009948 50%, #b4d336 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b4d336",endColorstr="#b4d336",GradientType=1);
+        border: none;
+        border-radius: 40px;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 8px 35px;
+        margin: 0 10px;
+        position: relative;
+        z-index: 25;
+        overflow: hidden; }
+        .intro-footer .container .button-container .enter-site-button:before {
+          content: "";
+          background-color: #009948;
+          height: 100%;
+          width: 0;
+          opacity: 0;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: all .3s;
+          z-index: -5; }
+        .intro-footer .container .button-container .enter-site-button:hover:before {
+          width: 100%;
+          opacity: 1; }
+  .intro-footer .copyright {
+    font-family: sans-serif;
+    direction: ltr;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #000000; }
+    .intro-footer .copyright a {
+      color: #000000; }
+
+@media (max-width: 1400px) {
+  .swiper-container .swiper-wrapper .swiper-slide .slide-link .image-container img {
+    max-height: 500px; } }
+@media (max-width: 1200px) {
+  .intro-footer .container .logo-container {
+    height: 238px; } }
+@media (max-width: 960px) {
+  .intro-footer {
+    background-size: contain; }
+
+  .intro-footer .container .logo-container {
+    height: 176px; } }
+@media (max-width: 720px) {
+  .swiper-container .slide-navigation {
+    height: 60px;
+    font-size: 50px;
+    line-height: 50px; }
+
+  .intro-footer .container .logo-container {
+    height: 130px; }
+
+  .intro-footer .container .button-container .enter-site-button {
+    font-size: 24px; } }
+@media (max-width: 420px) {
+  .swiper-container .slide-navigation {
+    height: 50px;
+    font-size: 40px;
+    line-height: 40px; }
+
+  .intro-footer .container .logo-container {
+    height: 84px; }
+
+  .intro-footer .container .button-container .enter-site-button {
+    padding: 7px 25px;
+    font-size: 18px; } }
+
+/*# sourceMappingURL=style-intro.css.map */

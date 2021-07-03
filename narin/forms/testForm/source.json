@@ -1,0 +1,1 @@
+{"title":"فرم تست","name":"testForm","submit":"ارسال","reset":"لغو","cols":2,"approval_needed":1,"captcha":1,"ref_id":1,"on_success":"msg","controls":[{"label":"عنوان","name":"title","validation":"farsi-text","max_len":255,"type":"textarea"}],"table":"testForm"}

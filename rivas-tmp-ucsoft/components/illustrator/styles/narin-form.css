@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+form.narin {padding:5px;}
+form.narin label {display:inline-block;margin:5px 0;}
+form.narin input[type="text"] {margin:5px 0;}
+form.narin label.required::after {content:'*';color:orange;}
+form.narin h2 {margin:0 5px 10px 0;padding:0;}
+form.narin h3 {margin:0 0 5px 0;padding:0;}
+form.narin div.textarea_maxlength {font-size:.8em;margin:0 5px 0 0;}
+form.narin div.textarea_maxlength_overflow {color:red;}
+form.narin .error, form.narin .success {border-style:solid;border-width:1px 4px 1px 1px;padding:5px 10px 5px 50px;margin-bottom:20px;display:inline-block;}
+form.narin .error {color:red;background-color:#fcc;border-color:#c88;}
+form.narin .success {color:green;background-color:#cfc;border-color:#8c8;}
+form.narin .invalid {background-color: tomato;}
+form.narin option {background-color:white;}
+form.narin fieldset, form.narin div.optgroup {display:inline-block;padding:5px;}
+form.narin div.date_picker {display:inline-block;}
+form.narin select.date_d option:first-child, form.narin select.date_m option:first-child, form.narin select.first_opt_not_allowed option:first-child {color:gray;background-color:#EEEEEE;}
+form.narin .description {font-size:.8em;margin:0 5px 0 0;font-style:italic;color:gray;}
+
+
+form.narin * {font-family:Tahoma,Geneva,sans-serif;}
+form.narin label {font-size:14px;}

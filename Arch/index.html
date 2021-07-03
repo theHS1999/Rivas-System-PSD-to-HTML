@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index - Arch Design</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!---------------------- navbar ---------------------->
+    <nav class="navbar fixed-top">
+        <div class="logo-center">
+            <div class="menu">
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a href="#">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            PRODUCTS
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            SERVICES
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            PAGES
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo-container">
+                <img src="img/nav-logo.png" alt="">
+            </div>
+            <div class="menu">
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a href="#">
+                            BLOG
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            SHOP
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            CONTACT
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <img src="img/search-icon.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/cart-icon.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---------------------- Main Slides ---------------------->
+    <div class="swiper-container main-slides">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#" class="slide-link">
+                    <div class="image-container">
+                        <img src="img/slide-image-1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="hero-1">
+                            INTERIOR DESIGN
+                        </div>
+                        <div class="hero-2">
+                            is thinking make visual
+                        </div>
+                        <button class="button">
+                            Contact now
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="slide-link">
+                    <div class="image-container">
+                        <img src="img/slide-image-2.jpeg" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="slide-link">
+                    <div class="image-container">
+                        <img src="img/slide-image-3.jpg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination main-slides-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="slide-navigation navigation-next">
+            <img src="img/main-slide-right.png" alt="">
+        </div>
+        <div class="slide-navigation navigation-prev">
+            <img src="img/main-slide-left.png" alt="">
+        </div>
+    </div>
+
+
+
+
+    <!---------------------- scripts ---------------------->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        var mainSwiper = new Swiper('.main-slides', {
+            /*autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },*/
+            pagination: {
+                el: '.main-slides-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '"><div class="inner-bullet"></div></span>';
+                },
+            },
+            navigation: {
+                nextEl: '.navigation-next',
+                prevEl: '.navigation-prev',
+            },
+        });
+    </script>
+</body>
+</html>

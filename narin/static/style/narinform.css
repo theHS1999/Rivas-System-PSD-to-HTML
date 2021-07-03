@@ -1,0 +1,68 @@
+@font-face {font-family: 'Yekan'; src: url('BYekan.eot?#') format('eot'), url('BYekan.woff') format('woff'), url('BYekan.ttf') format('truetype');}
+
+.narinform, .narinform div, .narinform form, .narinform h1, .narinform h2, .narinform h3, .narinform h4, .narinform fieldset, .narinform legend, .narinform ul, .narinform li, .narinform p, .narinform img, .narinform span, .narinform label, .narinform strong, .narinform abbr, .narinform em, .narinform b, .narinform a, .narinform select, .narinform option, .narinform textarea, .narinform input[type=text], .narinform input[type=password], .narinform input[type=file], .narinform input[type=radio], .narinform input[type=checkbox]  {padding: 0; margin: 0; border: 0; outline: 0; font-weight: normal; font-style: normal; list-style: none; text-decoration: none;}
+
+.narinform {direction: rtl; padding: 4px; font-family: Yekan, Tahoma, Geneva, sans-serif; font-size: 13px; background: #fff;}
+.narinform a {color: #0e6488;}
+.narinform a:hover {color: #00b3ff;}
+.narinform h1 {font-size: 19px; font-weight: bold;}
+.narinform h2 {font-size: 18px; font-weight: bold;}
+.narinform h3 {font-size: 13px; font-weight: bold;}
+.narinform h4 {font-size: 12px; font-weight: bold;}
+.narinform input, .narinform textarea, .narinform select {font-family: Tahoma, Geneva, sans-serif; font-size: 13px;}
+.narinform input[type=submit], .narinform input[type=reset], .narinform input[type=button], .narinform button {font-family: Yekan, Tahoma, Geneva, sans-serif; font-size: 13px; padding: 1px 12px;}
+.narinform input[type=text], .narinform input[type=password] {width: 194px; height: 18px; line-height: 18px; padding: 2px; vertical-align: middle;}
+.narinform input[type=text][size], .narinform input[type=password][size] {width: auto;}
+.narinform select {min-width: 200px; height: 24px; line-height: 24px; vertical-align: middle;}
+.narinform textarea {width: 194px; height: 90px; line-height: 18px; padding: 2px;}
+.narinform input[type=checkbox], .narinform input[type=radio] {width: 13px; height: 13px; vertical-align: bottom; position: relative; top: -5px;}
+.narinform input[type=text], .narinform input[type=password], .narinform textarea, .narinform select {border: 1px solid #0e6488;}
+.narinform input[type=text]:focus, .narinform input[type=password]:focus, .narinform textarea:focus, .narinform select:focus {border-color: #00b3ff; -webkit-box-shadow: 0 0 2px 1px #ccf; -moz-box-shadow: 0 0 2px 1px #ccf; box-shadow: 0 0 2px 1px #ccf;}
+.narinform input[type=checkbox]:focus, .narinform input[type=radio]:focus, .narinform input[type=file]:focus {outline: 1px solid #00b3ff;}
+.narinform input[type=file] {width: 200px; background: #fff; direction: ltr;}
+
+.narinform .message {padding: 12px; margin-bottom: 8px; border-width: 2px; border-style: solid;}
+.narinform .message.fail {background: #fcc; border-color: #e00; color: #800;}
+.narinform .message.success {background: #cfc; border-color: #0e0; color: #080;}
+
+.narinform-refid {font-family: Yekan, Arial, Helvetica, sans-serif; font-size: 19px; text-align: center; color: #000;}
+.narinform-refid p {display: inline-block; padding: 12px 18px; background: #fff; border: 1px solid #beb;}
+.narinform-refid span {display: block;}
+@media print {
+.narinform-refid p {border-color: #bbb;}
+.narinform-refid span.print {display: none;}
+}
+
+.narinform form p, .narinform form div {padding: 4px; margin: 4px 0;}
+.narinform form fieldset {padding: 0 8px 4px 8px; border: 1px solid #0e6488; display: inline-block; min-width: 302px;}
+.narinform form legend {padding: 0 2px;}
+.narinform form .description {background: #fff;}
+.narinform form .buttons {background: #fff; padding-right: 120px; clear: both;}
+.narinform form .main+.buttons {padding-right: 128px;}
+.narinform form .invalid {background: #fff5c0;}
+.narinform form div.main {position: relative; padding: 0; margin: 0 0 10px 0;}
+.narinform form div.section {position: absolute; padding: 0; margin: 0;}
+.narinform form div.section .inner {padding: 4px; margin: 4px 2px; border: 1px solid #ccc; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+
+.narinform form em {display: none;}
+.narinform form em.important, .narinform form .invalid em {display: inline;}
+.narinform form .textarea-maxlen {margin-right: 120px; padding: 2px 0; color: #666; display: block;}
+.narinform form .textarea-maxlen.exceeded {color: #f66;}
+.narinform form .error {color: #f66; padding-bottom: 4px; display: block;}
+
+.narinform form label, .narinform form strong, .narinform form em, .narinform form .muti-inp {line-height: 24px;}
+.narinform form label {vertical-align: top;}
+.narinform form strong {color: #f00; vertical-align: top;}
+.narinform form abbr {font-family: Tahoma, Geneva, sans-serif; vertical-align: top;}
+.narinform form em {color: #666; vertical-align: top;}
+.narinform form b {color: #111; vertical-align: top;}
+.narinform form [lang=en] {font-family: Tahoma, Geneva, sans-serif;}
+
+.narinform form .captcha {display: block; margin: 0 120px 4px 0;}
+.narinform form .captcha img {width: 200px; height: 70px;}
+.narinform form .captcha a {font-size: 12px; margin-right: 4px; vertical-align: top;}
+
+.narinform form label span {width: 115px; padding-left: 5px; display: inline-block; vertical-align: top;}
+.narinform form label input[type=checkbox]+span, .narinform form label input[type=radio]+span {min-width: 120px; padding: 0 5px 0 0; width: auto;}
+.narinform form .muti-inp select {min-width: 0;}
+.narinform form option[value=""] {color: #666;}

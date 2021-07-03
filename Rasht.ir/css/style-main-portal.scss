@@ -1,0 +1,568 @@
+///////////////////////// Credentials /////////////////////////
+html, body {
+  font-family: 'BNazanin', 'B Nazanin', Tahoma;
+  direction: rtl;
+  text-align: right;
+}
+
+$yellow: #faf055;
+$grey: #d5d6d7;
+$darkGrey: #a4a4a0;
+$blue: #0561a1;
+
+///////////////////////// Large Screens /////////////////////////
+
+//////////////////// Mayor Speech and Main News ////////////////////
+.mayor-speech, .main-news {
+  display: block;
+  height: 100%;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: $grey;
+  padding: 15px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+  transition: all .3s;
+  &:hover {
+    text-decoration: none;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+  }
+  .title {
+    color: $blue;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px;
+    &.font-farnaz {
+      font-family: 'BFarnaz', 'B Farnaz', Tahoma;
+    }
+  }
+  .image-container {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .text-container {
+    padding-top: 10px;
+    .text {
+      margin-bottom: 10px;
+      color: #000000;
+      text-align: justify;
+      font-weight: bold;
+    }
+  }
+
+  .more {
+    text-align: center;
+  }
+}
+
+//////////////////// More News  ////////////////////
+.more-news {
+  display: block;
+  //height: 100%;
+  border-radius: 10px;
+  background-color: $grey;
+  .section-title {
+    font-family: 'BFarnaz', 'B Farnaz', Tahoma;
+    color: $blue;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 15px 0;
+    margin-bottom: 10px;
+  }
+  .news-list {
+    list-style: none;
+    margin-bottom: 0;
+    .news {
+      position: relative;
+      margin-bottom: 10px;
+      z-index: 25;
+      &:before {
+        content: "";
+        height: 100%;
+        width: 0;
+        background-color: rgba(#6b6d6e, .3);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: all .3s;
+        z-index: -5;
+      }
+      &:hover {
+        &:before {
+          width: 100%;
+        }
+      }
+      .news-link {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-wrap: wrap;
+        text-decoration: none;
+        padding: 10px 15px;
+        .image-container {
+          width: 35%;
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .text-container {
+          width: 65%;
+          padding: 0 5px;
+          .news-title {
+            color: #000000;
+            text-align: justify;
+            font-weight: bold;
+          }
+        }
+
+        .more {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
+//////////////////// Main Slides ////////////////////
+.main-slides {
+  max-height: 600px;
+  width: 100%;
+  margin: 30px 0;
+  .swiper-slide {
+    width: 100%;
+    .slide-link {
+      width: 100%;
+      display: block;
+      position: relative;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+      .title {
+        width: 100%;
+        background-color: rgba(0, 0, 0, .4);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        color: #ffffff;
+        padding: 10px 15px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .main-slides-navigation {
+    background-color: rgba(#7f7f7f, .5);
+    height: 75px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 15;
+    transition: all .3s;
+    &.swiper-button-disabled {
+      opacity: .5;
+      cursor: unset;
+      &:hover {
+        background-color: rgba(#7f7f7f, .5);
+      }
+    }
+    &.main-slides-next {
+      left: 0;
+      padding-left: 7px;
+      border-radius: 0 17px 17px 0;
+    }
+    &.main-slides-prev {
+      right: 0;
+      padding-right: 7px;
+      border-radius: 17px 0 0 17px;
+    }
+    &:hover {
+      background-color: rgba($blue, .5);
+    }
+    img {
+      height: 100%;
+    }
+
+  }
+
+  .swiper-pagination-bullets {
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      &.swiper-pagination-bullet-active {
+        background-color: $blue;
+      }
+    }
+
+  }
+
+}
+
+//////////////////// Section ////////////////////
+.section {
+  background-color: $grey;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+  height: 95%;
+  transform: scale(1);
+  transition: all .3s;
+  &:hover {
+    text-decoration: none;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    transform: scale(1.05);
+  }
+  .icon-container {
+    height: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .section-title {
+    font-family: 'BHoma', 'B Homa', Tahoma;
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 7px;
+    position: relative;
+    &:after {
+      content: "";
+      width: 150px;
+      height: 2px;
+      background-color: $blue;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .section-list {
+    list-style: none;
+    margin-right: 25px;
+    padding-left: 15px;
+    .item {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      text-align: justify;
+      transform: translateX(0);
+      transition: all .3s;
+
+      &:before {
+        content: "✔";
+        color: $blue;
+        position: relative;
+        left: 10px;
+        top: 2px;
+        font-size: 20px;
+        transition: all .3s;
+      }
+      &:hover {
+        transform: translateX(-10px);
+        &:before {
+          color: $yellow;
+        }
+      }
+
+      .link {
+        font-size: 16px;
+        font-weight: bold;
+        color: #000000;
+        text-decoration: none;
+      }
+
+    }
+  }
+}
+
+//////////////////// Blog Side ////////////////////
+.blog-side {
+  background-color: $grey;
+  border-radius: 10px;
+  height: 100%;
+  .blog-side-title {
+    font-family: 'BHoma', 'B Homa', Tahoma;
+    padding: 8px 15px;
+    margin-bottom: 0;
+    color: #ffffff;
+    background-color: $blue;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .content {
+    padding: 15px;
+    font-weight: bold;
+    text-align: justify;
+  }
+}
+
+//////////////////// Blog Main ////////////////////
+.blog-main {
+  background-color: $grey;
+  border-radius: 10px;
+  height: 100%;
+  .section-title {
+    padding: 8px 15px;
+    color: #ffffff;
+    background-color: $blue;
+    border-radius: 10px;
+    text-align: center;
+    .title-holder {
+      display: inline-block;
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+    .title {
+      font-family: 'BHoma', 'B Homa', Tahoma;
+      display: inline-block;
+      margin: 0 5px;
+      font-size: 20px;
+    }
+  }
+
+  .blog-content {
+    padding: 15px;
+    text-align: justify;
+  }
+}
+
+//////////////////// News (Blog) Page Content ////////////////////
+.blog-content {
+  .news-page-title {
+    color: $blue;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .news-page-top-part {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    .text {
+      width: 70%;
+      padding-left: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: justify;
+    }
+    .image-container {
+      width: 30%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .news-page-article {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .news-page-image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .image-container {
+      padding: 10px;
+      width: 25%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//////////////////// News (Blog) Page Form ////////////////////
+.form-control:focus, .custom-file-input:focus~.custom-file-label {
+  border-color: $blue;
+  box-shadow: 0 0 0 2px rgba(5, 97, 161, 0.25);
+}
+select.form-control option:hover {
+  background-color: $blue;
+}
+.custom-file-label::after {
+  left: 0;
+  right: unset;
+  border-radius: 4px 0 0 4px;
+  background-color: $blue;
+  color: #ffffff;
+}
+.captcha-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.captcha-area .captcha-image {
+  border: 2px solid $blue;
+  border-radius: 7px;
+  overflow: hidden;
+  height: 100px;
+  margin: 0 10px;
+}
+.captcha-area .captcha-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+.captcha-area .captcha-reset {
+  border: none;
+  color: #ffffff;
+  background-color: $blue;
+  padding: 3px 10px;
+  border-radius: 15px;
+}
+.blog-content form {
+  margin: 30px 0;
+}
+.blog-content form .buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.blog-content form .buttons button {
+  border: 1px solid $blue;
+  min-width: 100px;
+  font-size: 18px;
+  padding: 1px;
+  background-color: transparent;
+  margin: 0 10px;
+  border-radius: 17px;
+}
+.blog-content form .buttons button span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: $blue;
+  color: #ffffff;
+  padding: 4px 25px;
+  border-radius: 15px;
+}
+
+
+@media(max-width: 1360px) {
+  //////////////////// More News  ////////////////////
+  .more-news .news-list .news .news-link {
+    justify-content: center;
+  }
+  .more-news .news-list .news .news-link .image-container {
+    width: 50%;
+  }
+  .more-news .news-list .news .news-link .text-container {
+    width: 100%;
+  }
+}
+
+@media(max-width: 1200px) {
+  //////////////////// Section ////////////////////
+  .section .section-list {
+    display: unset;
+    margin-right: 20px;
+    padding-left: 0;
+  }
+  .section .section-list .item .link {
+    font-size: 15px;
+  }
+}
+
+///////////////////////// Medium Screens /////////////////////////
+@media(max-width: 960px) {
+  //////////////////// Header ////////////////////
+  .header .logos-section {
+    height: 120px;
+  }
+  .header .logos-section .logo.right-logo {
+    padding-right: 0;
+  }
+  .header .logos-section .logo.left-logo {
+    padding-left: 0;
+  }
+
+  //////////////////// More News  ////////////////////
+  .more-news .news-list .news .news-link .text-container .news-title {
+    text-align: center;
+  }
+
+  //////////////////// Main Slides ////////////////////
+  .main-slides .main-slides-navigation {
+    height: 60px;
+  }
+
+  //////////////////// News (Blog) Page Content ////////////////////
+  .blog-content .news-page-top-part .image-container {
+    width: 40%;
+  }
+}
+
+///////////////////////// Small Screens /////////////////////////
+@media(max-width: 720px) {
+  //////////////////// Header ////////////////////
+  .header .logos-section {
+    height: 100px;
+  }
+
+  //////////////////// Main Slides ////////////////////
+  .main-slides .main-slides-navigation {
+    height: 45px;
+  }
+  .main-slides .main-slides-navigation.main-slides-next {
+    border-radius: 0 14px 14px 0;
+  }
+  .main-slides .main-slides-navigation.main-slides-prev {
+    border-radius: 14px 0 0 14px;
+  }
+
+  //////////////////// Mayor Speech and Main News ////////////////////
+  .mayor-speech, .main-news {
+    margin-bottom: 30px;
+  }
+}
+
+///////////////////////// Extra Small Screens /////////////////////////
+@media(max-width: 420px) {
+  //////////////////// Header ////////////////////
+  .header .logos-section {
+    height: 55px;
+  }
+
+  //////////////////// Blog Main ////////////////////
+  .blog-main .section-title .title-holder img {
+    width: 75px;
+  }
+
+  //////////////////// News (Blog) Page Content ////////////////////
+  .blog-content .news-page-top-part .text {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .blog-content .news-page-top-part .image-container {
+    width: 100%;
+  }
+  .blog-content .news-page-image-gallery .image-container {
+    width: 50%;
+  }
+}

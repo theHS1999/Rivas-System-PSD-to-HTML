@@ -1,0 +1,853 @@
+<!doctype html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>پورتال اطلاع رسانی و خدمات الکترونیک شهرداری رشت</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/credentials.css">
+    <link rel="stylesheet" href="css/style-main-portal.css">
+</head>
+<body>
+<!---------------------- header ---------------------->
+<header class="header">
+    <!------------ top bar ------------>
+    <div class="top-part">
+        <!------- search ------->
+        <div class="search-section">
+            <form action="">
+                <input type="search" id="search" name="search" placeholder="عبارت جستجو">
+                <button type="submit" class="search-icon">
+                    <img src="img/search-icon.png" alt="">
+                </button>
+            </form>
+        </div>
+
+        <!------- themes (contrasts) ------->
+        <div class="theme-section">
+            <a href="#" class="theme" id="black-contrast"></a>
+            <a href="#" class="theme" id="main"></a>
+            <a href="#" class="theme" id="yellow-contrast"></a>
+        </div>
+
+        <!------- icons ------->
+        <div class="icons-section">
+            <ul class="icons-list">
+                <li class="icon zoom">
+                    <a href="#">
+                        <i class="fal fa-times-circle"></i>
+                    </a>
+                </li>
+                <li class="icon zoom">
+                    <a href="#">
+                        <i class="fal fa-minus-circle"></i>
+                    </a>
+                </li>
+                <li class="icon zoom">
+                    <a href="#">
+                        <i class="fal fa-plus-circle"></i>
+                    </a>
+                </li>
+                <li class="icon lang">
+                    <a href="#">
+                        EN
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <i class="fas fa-rss"></i>
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <i class="fas fa-user-friends"></i>
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <i class="fas fa-user-lock"></i>
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <i class="far fa-at"></i>
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <i class="fal fa-sitemap"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!------------ logos section ------------>
+    <div class="logos-section">
+        <div class="logo right-logo">
+            <img src="img/main/header-logo-right.png" alt="">
+        </div>
+        <div class="logo left-logo">
+            <img src="img/main/header-logo-left.png" alt="">
+        </div>
+    </div>
+</header>
+
+
+<!-------------------- Navbar -------------------->
+<nav class="site-navbar">
+    <div class="container-fluid">
+        <div class="dropdown-nav-menu">
+            <a class="nav-dropdown">
+                منو اصلی سایت
+                <img src="img/down-caret.png" alt="" class="caret" id="navbar-drop-caret">
+            </a>
+            <ul class="dropdown-nav-items">
+
+            </ul>
+        </div>
+        <ul class="nav-items">
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    صفحه اصلی
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    مدیریت شهری
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-hover">
+                    اطلاع رسانی
+                </a>
+                <div class="dropdown-menu">
+                    <ul class="dropdown-list">
+                        <li class="dropdown-item">
+                            <a href="#" class="nav-link">
+                                حمل و نقل عمومی
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="nav-link">
+                                عمران و معماری شهرسازی
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="nav-link">
+                                فناوری اطلاعات
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="nav-link">
+                                فرهنگ شهری
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="nav-link">
+                                اقتصاد و برنامه ریزی شهر
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="nav-link">
+                                خدمات و محیط زیست شهری
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="nav-link">
+                                ایمنی شهر
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    چند رسانه ای
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-------------------- Back to Top Button -------------------->
+<a href="#" id="back-to-top" title="Back to top">
+    <i class="fas fa-caret-up"></i>
+</a>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-------------------- Mayor Speech -------------------->
+        <section class="col-sm-6 col-lg-3 order-0 order-sm-0 order-lg-0 mb-3 mb-sm-3 mb-md-3 mb-lg-0">
+            <a href="#" class="mayor-speech">
+                <div class="title font-farnaz">
+                    سخن شهردار
+                </div>
+                <div class="image-container">
+                    <img src="img/main/mayor.jpg" alt="">
+                </div>
+                <div class="text-container">
+                    <div class="text">
+                        بر خود می بالـــم که با جـلب اعــتمـاد اعضای محترم شورای اسلامی شهر
+                        رشت افــتخــار خدمت به شــهـــر اولـین هـا نصیبم شده است. شهری که همواره بـه عنوان یکی از مهمترین
+                        شـهرهـای ایران مطرح بوده اســـت و آوازه فرهیـختگی، سرزندگی و مهربانی مردمان آن زبانزد عام و خاص است.
+                    </div>
+                    <div class="more">
+                        <span>
+                            <img src="img/more.png" alt="more">
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+
+        <!-------------------- Main News -------------------->
+        <section class="col-sm-12 col-lg-6 order-1 order-sm-2 order-lg-1 mb-3">
+            <a href="#" class="main-news">
+                <div class="title">
+                    دیدار شهردار رشت با سخنگوی وزارت امور خارجه جمهوری اسلامی ایران
+                </div>
+                <div class="image-container">
+                    <img src="img/main/news-5.jpg" alt="">
+                </div>
+                <div class="text-container">
+                    <div class="text">
+                        به گزارش واحد خبر مدیریت ارتبـاطات و امـور بین المـلل شهرداری رشت، شـهردار ایـن‌کلانشهر در
+                        نشست دوستانه با سخنگوی وزارت امور خارجه جمــهوری اســـلامی ایـران‌ و‌سـفیر ایران در آذربایجان، سفر وی
+                        و هیئت همراه را به گیلان منشـا خـیر دانـسـت و با اشـاره به تشـابــهات اقلیمی میان مرکز گیلان و مرکز
+                        آذربایجان اظـهار کـرد: باید بتوان همکـــاری های دوجــانبه فرهنگی میان این دو منطقه فراهم کرد.
+                    </div>
+                    <div class="more">
+                        <span>
+                            <img src="img/more.png" alt="more">
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <!-------------------- More News -------------------->
+        <section class="col-sm-6 col-lg-3 order-2 order-sm-1 order-lg-2">
+            <div class="more-news">
+                <div class="section-title">
+                    سایر اخبار ...
+                </div>
+                <ul class="news-list">
+                    <li class="news">
+                        <a href="#" class="news-link">
+                            <div class="image-container">
+                                <img src="img/main/news-1.jpg" alt="">
+                            </div>
+                            <div class="text-container">
+                                <div class="news-title">
+                                    بارگذاری آمار حمل و نقل درون شهری و پارکینگ های رشت در
+                                    سامانه آمار و اطلاعات
+                                </div>
+                            </div>
+                            <div class="more">
+                                <span>
+                                    <img src="img/more.png" alt="more">
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news">
+                        <a href="#" class="news-link">
+                            <div class="image-container">
+                                <img src="img/main/news-2.jpg" alt="">
+                            </div>
+                            <div class="text-container">
+                                <div class="news-title">
+                                    بارگذاری آمار حمل و نقل درون شهری و پارکینگ های رشت در
+                                    سامانه آمار و اطلاعات
+                                </div>
+                            </div>
+                            <div class="more">
+                                <span>
+                                    <img src="img/more.png" alt="more">
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news">
+                        <a href="#" class="news-link">
+                            <div class="image-container">
+                                <img src="img/main/news-3.jpg" alt="">
+                            </div>
+                            <div class="text-container">
+                                <div class="news-title">
+                                    بارگذاری آمار حمل و نقل درون شهری و پارکینگ های رشت در
+                                    سامانه آمار و اطلاعات
+                                </div>
+                            </div>
+                            <div class="more">
+                                <span>
+                                    <img src="img/more.png" alt="more">
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+<!-------------------- Main Slides -------------------->
+<div class="swiper-container main-slides">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="#" class="slide-link">
+                <div class="image-container">
+                    <img src="img/creative-city/main-slide-pic-1.jpg" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#" class="slide-link">
+                <div class="image-container">
+                    <img src="img/creative-city/main-slide-pic-1.jpg" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#" class="slide-link">
+                <div class="image-container">
+                    <img src="img/creative-city/main-slide-pic-1.jpg" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--------------- Add Pagination --------------->
+    <div class="swiper-pagination main-slides-pagination"></div>
+
+    <!--------------- Add Navigation --------------->
+    <div class="main-slides-navigation main-slides-next">
+
+    </div>
+    <div class="main-slides-navigation main-slides-prev">
+        <img src="img/slide-navigation-right-1.png" alt="">
+    </div>
+
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-------------------- Section -------------------->
+        <section class="col-sm-6 col-lg-3" data-aos="fade-up">
+            <div class="section" id="#image-report">
+                <div class="icon-container">
+                    <img src="img/main/section-image-report.png" alt="">
+                </div>
+                <h3 class="section-title">
+                    گزارشات تصویری
+                </h3>
+                <ul class="section-list">
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-------------------- Section -------------------->
+        <section class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="section" id="#management-news">
+                <div class="icon-container">
+                    <img src="img/main/section-management-news.png" alt="">
+                </div>
+                <h3 class="section-title">
+                    تازه های مدیریت
+                </h3>
+                <ul class="section-list">
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-------------------- Section -------------------->
+        <section class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="section" id="#personel-service">
+                <div class="icon-container">
+                    <img src="img/main/section-personel-service.png" alt="">
+                </div>
+                <h3 class="section-title">
+                     شهرداری الکترونیک خدمات پرسنلی
+                </h3>
+                <ul class="section-list">
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-------------------- Section -------------------->
+        <section class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="section" id="#citizen-service">
+                <div class="icon-container">
+                    <img src="img/main/section-citizen-service.png" alt="">
+                </div>
+                <h3 class="section-title">
+                    شهرداری الکترونیک خدمات شهروندی
+                </h3>
+                <ul class="section-list">
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-------------------- Section -------------------->
+        <section class="col-sm-6 col-lg-3" data-aos="fade-up">
+            <div class="section" id="#auctions">
+                <div class="icon-container">
+                    <img src="img/main/section-auctions.png" alt="">
+                </div>
+                <h3 class="section-title">
+                    مناقصه ها و مزایده ها
+                </h3>
+                <ul class="section-list">
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-------------------- Section -------------------->
+        <section class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="section" id="#projects">
+                <div class="icon-container">
+                    <img src="img/main/section-projects.png" alt="">
+                </div>
+                <h3 class="section-title">
+                    پروژه های جاری
+                </h3>
+                <ul class="section-list">
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-------------------- Section -------------------->
+        <section class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="section" id="#links">
+                <div class="icon-container">
+                    <img src="img/main/section-links.png" alt="">
+                </div>
+                <h3 class="section-title">
+                    پیوند ها
+                </h3>
+                <ul class="section-list">
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-------------------- Section -------------------->
+        <section class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="section" id="#occasions">
+                <div class="icon-container">
+                    <img src="img/main/section-occasions.png" alt="">
+                </div>
+                <h3 class="section-title">
+                    مناسبت ها و رویداد ها
+                </h3>
+                <ul class="section-list">
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">
+                            گزارشات تصویری شهرداری رشت
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+
+<!-------------------- Footer  -------------------->
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 footer-section">
+                <div class="title">
+                    اوقات شرعی
+                </div>
+                <div class="contents religious-times">
+                    <ul class="content-list">
+                        <li class="content">
+                            مانده تا غروب خورشید:
+                            <span class="value">
+                            2:50:30
+                        </span>
+                        </li>
+                        <li class="content">
+                            اذان صبح:
+                            <span class="value">
+                            2:50:30
+                        </span>
+                        </li>
+                        <li class="content">
+                            طلوع خورشید:
+                            <span class="value">
+                            2:50:30
+                        </span>
+                        </li>
+                        <li class="content">
+                            اذان ظهر:
+                            <span class="value">
+                            2:50:30
+                        </span>
+                        </li>
+                        <li class="content">
+                            غروب خورشید:
+                            <span class="value">
+                            2:50:30
+                        </span>
+                        </li>
+                        <li class="content">
+                            اذان مغرب:
+                            <span class="value">
+                            2:50:30
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 footer-section">
+                <div class="title">
+                    آب و هوا
+                </div>
+                <div class="contents weather">
+                    <ul class="content-list">
+                        <li class="content">
+                            <span class="icon"><i class="fal fa-temperature-high"></i></span>
+                            دمای فعلی:
+                            <span class="value">
+                            20 درجه
+                        </span>
+                        </li>
+                        <li class="content">
+                            <span class="icon"><i class="fas fa-tint"></i></span>
+                            رطوبت:
+                            <span class="value">
+                            20 درجه
+                        </span>
+                        </li>
+                        <li class="content">
+                            <span class="icon"><i class="fal fa-wind"></i></span>
+                            باد:
+                            <span class="value">
+                            20 درجه
+                        </span>
+                        </li>
+                        <li class="content">
+                            <span class="icon"><i class="fal fa-temperature-high"></i></span>
+                            دمای فعلی:
+                            <span class="value">
+                            20 درجه
+                        </span>
+                        </li>
+                        <li class="content">
+                            <span class="icon"><i class="fas fa-tint"></i></span>
+                            رطوبت:
+                            <span class="value">
+                            20 درجه
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 footer-section">
+                <div class="title">
+                    پل های ارتباطی شهرداری
+                </div>
+                <div class="contents contact">
+                    <ul class="content-list">
+                        <li class="content">
+                            سامانه پیام کوتاه:
+                            <span class="value">
+                            100000137
+                        </span>
+                        </li>
+                        <li class="content">
+                            ایمیل:
+                            <span class="value">
+                            info@rasht.ir
+                        </span>
+                        </li>
+                        <li class="content">
+                            پیام گیر:
+                            <span class="value">
+                            137
+                        </span>
+                        </li>
+                        <li class="content">
+                            شماره تماس:
+                            <span class="value">
+                            33669908 336687819 - 33669208
+                        </span>
+                        </li>
+                        <li class="content">
+                            آدرس:
+                            <span class="value">
+                            بلوار امام خمینی (ره) - جنب بنیاد مسکن - شهرداری رشت
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 footer-section">
+                <div class="title">
+                    آخرین به روز رسانی
+                </div>
+                <div class="contents time">
+                    <ul class="content-list">
+                        <li class="content">
+                            روز:
+                            <span class="value">
+                                یکشنبه
+                            </span>
+                        </li>
+                        <li class="content">
+                            تاریخ:
+                            <span class="value">
+                                12/5/99
+                            </span>
+                        </li>
+                        <li class="content">
+                            ساعت:
+                            <span class="value">
+                                14:19:55
+                            </span>
+                        </li>
+                        <li class="content english">
+                            Day:
+                            <span class="value">
+                                Sunday
+                            </span>
+                        </li>
+                        <li class="content english">
+                            Date:
+                            <span class="value">
+                                2020/8/2
+                            </span>
+                        </li>
+                        <li class="content english">
+                            Time:
+                            <span class="value">
+                                14:19:55
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            &#169;
+            COPYRIGHT
+            <a href="#">RASHT.IR</a>
+            2020
+        </div>
+    </div>
+</footer>
+
+
+
+<!-------------------- Scripts -------------------->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/main.js"></script>
+<script>
+    AOS.init();
+
+    var mainSlides = new Swiper('.main-slides', {
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.main-slides-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.main-slides-next',
+            prevEl: '.main-slides-prev',
+        },
+    });
+
+    $(document).ready(function() {
+        $(".mayor-speech").mouseenter(function() {
+            $(this).find(".more").find("span").find("img").attr("src", "img/more-hover.png");
+        });
+        $(".mayor-speech").mouseleave(function() {
+            $(this).find(".more").find("span").find("img").attr("src", "img/more.png");
+        });
+        $(".main-news").mouseenter(function() {
+            $(this).find(".more").find("span").find("img").attr("src", "img/more-hover.png");
+        });
+        $(".main-news").mouseleave(function() {
+            $(this).find(".more").find("span").find("img").attr("src", "img/more.png");
+        });
+        $(".news").mouseenter(function() {
+            $(this).find(".more").find("span").find("img").attr("src", "img/more-hover.png");
+        });
+        $(".news").mouseleave(function() {
+            $(this).find(".more").find("span").find("img").attr("src", "img/more.png");
+        });
+    });
+</script>
+</body>
+</html>

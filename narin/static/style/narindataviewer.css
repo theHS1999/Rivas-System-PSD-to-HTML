@@ -1,0 +1,70 @@
+@font-face {font-family: 'Yekan'; src: url('BYekan.eot?#') format('eot'), url('BYekan.woff') format('woff'), url('BYekan.ttf') format('truetype');}
+
+.narindataviewer, .narindataviewer table, .narindataviewer thead, .narindataviewer tbody, .narindataviewer tr, .narindataviewer th, .narindataviewer td, .narindataviewer div, .narindataviewer h1, .narindataviewer fieldset, .narindataviewer legend, .narindataviewer ul, .narindataviewer li, .narindataviewer p, .narindataviewer span, .narindataviewer label, .narindataviewer i, .narindataviewer b, .narindataviewer a, .narindataviewer select, .narindataviewer option, .narindataviewer textarea, .narindataviewer input[type=text], .narindataviewer input[type=radio], .narindataviewer input[type=checkbox]  {padding: 0; margin: 0; border: 0; outline: 0; font-weight: normal; font-style: normal; list-style: none; text-decoration: none;}
+
+.narindataviewer {direction: rtl; padding: 4px; font-family: Yekan, Tahoma, Geneva, sans-serif; font-size: 13px; background: #fff;}
+
+.narindataviewer h1 {font-size: 19px; font-weight: bold;}
+.narindataviewer label {line-height: 24px;}
+.narindataviewer input, .narindataviewer textarea {font-family: Tahoma, Geneva, sans-serif; font-size: 13px;}
+.narindataviewer select, .narindataviewer button {font-family: Yekan, Tahoma, Geneva, sans-serif; font-size: 13px;}
+.narindataviewer button {padding: 1px 12px;}
+.narindataviewer input[type=text] {height: 18px; line-height: 18px; padding: 2px;}
+.narindataviewer select {height: 24px; line-height: 24px;}
+.narindataviewer textarea {line-height: 18px; padding: 2px;}
+.narindataviewer input[type=checkbox], .narindataviewer input[type=radio] {width: 13px; height: 13px; vertical-align: bottom; position: relative; top: -5px;}
+.narindataviewer input[type=text], .narindataviewer textarea, .narindataviewer select {border: 1px solid #0e6488;}
+.narindataviewer input[type=text]:focus, .narindataviewer textarea:focus, .narindataviewer select:focus {border-color: #00b3ff; -webkit-box-shadow: 0 0 2px 1px #ccf; -moz-box-shadow: 0 0 2px 1px #ccf; box-shadow: 0 0 2px 1px #ccf;}
+.narindataviewer input[type=checkbox]:focus, .narindataviewer input[type=radio]:focus {outline: 1px solid #00b3ff;}
+
+.narindataviewer .infobar {margin: 12px 0;}
+.narindataviewer .infobar.error {color: #800;}
+
+.narindataviewer table {min-width: 100%; border: 2px solid #acc9e5; border-collapse: collapse; border-spacing: 0;}
+.narindataviewer th {border: 1px solid #acc9e5; border-bottom-width: 2px; background: #bfdfff; color: #004d99; font-weight: bold; height: 32px; line-height: 32px; padding: 0 25px 0 6px; vertical-align: middle; text-align: center; white-space: nowrap; position: relative;}
+.narindataviewer td {border: 1px solid #acc9e5; padding: 4px 6px; vertical-align: middle;}
+.narindataviewer th:first-child {padding: 0 6px;}
+.narindataviewer td:first-child {text-align: center;}
+.narindataviewer td.null {background: url(narindataviewer-null.png) top right repeat;}
+.narindataviewer td.fixed {text-align: center; white-space: nowrap;}
+.narindataviewer td.approval {text-align: right;}
+.narindataviewer td.approval span {display: inline-block; width: 16px; height: 16px; margin-left: 4px; position: relative; top: 4px; background-repeat: no-repeat;}
+.narindataviewer td.approval span.loading {background-image: url(loading.gif);}
+.narindataviewer td.approval span.success {background-image: url(narindataviewer-icons.png); background-position: 0 -64px;}
+.narindataviewer td.approval span.fail {background-image: url(narindataviewer-icons.png); background-position: 0 -80px;}
+.narindataviewer td.approval input {margin-top: 2px; width: 192px;}
+.narindataviewer tbody tr:nth-child(even) {background: #f2f9ff;}
+.narindataviewer tbody tr:hover {background: #ffffe5;}
+.narindataviewer tbody a {color: #0e6488;}
+.narindataviewer tbody a:hover {color: #00b3ff;}
+.narindataviewer tbody i {color: #888;}
+.narindataviewer tbody b {display: inline-block; white-space: nowrap; padding: 0 2px; background: rgba(220,220,220,.15); border: 1px solid #ccc; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;}
+.narindataviewer tbody li {display: block; margin-top: 2px;}
+.narindataviewer tbody li:first-child {margin-top: 0;}
+
+.narindataviewer th .sort {display: block; width: 16px; height: 32px; position: absolute; right: 3px;}
+.narindataviewer th .sort a {display: block; width: 16px; height: 16px; position: absolute; background: url(narindataviewer-icons.png) no-repeat;}
+.narindataviewer th .sort .asc {top: 0; background-position: 0 0;}
+.narindataviewer th .sort .desc {bottom: 0; background-position: 0 -16px;}
+.narindataviewer th .sort .asc.active {background-position: 0 -32px;}
+.narindataviewer th .sort .desc.active {background-position: 0 -48px;}
+
+@media print {
+.narindataviewer th {padding: 0 6px !important;}
+.narindataviewer th .sort {display: none;}
+}
+
+.narindataviewer .pagination {margin: 12px 0; text-align: center;}
+.narindataviewer .pagination .print {display: none;}
+.narindataviewer .pagination .pages {font-size: 18px; line-height: 30px; margin-bottom: 8px;}
+.narindataviewer .pagination a {color: #888; display: inline-block; width: 29px; height: 29px; border: 1px solid #acc9e5; margin: 0 1px;}
+.narindataviewer .pagination a[href] {color: #004d99;}
+.narindataviewer .pagination a[href]:hover {background: #bfdfff;}
+.narindataviewer .pagination a.active {background: #bfdfff; color: #00264c;}
+.narindataviewer .pagination a.ellipsis {border-style: dashed none dashed none;}
+
+@media print {
+.narindataviewer .pagination .print {display: block !important;}
+.narindataviewer .pagination .pages {display: none;}
+.narindataviewer .pagination label {display: none;}
+}

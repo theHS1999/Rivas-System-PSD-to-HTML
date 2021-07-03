@@ -1,0 +1,1031 @@
+﻿<form method="post" class="narinformcreator">
+	<div class="main">
+		<h1>فرم‌ساز نارین</h1>
+		<div class="section fieldset form">
+			<h2>مشخصات فرم</h2>
+			<p>
+				<label>
+					<span>عنوان:</span><input type="text" name="title" class="required" maxlength="100" />
+					<strong><abbr title="الزامی">*</abbr></strong>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>نام:</span><input type="text" name="name" lang="en" maxlength="200" />
+					<em>فقط حروف و ارقام انگلیسی و زیرین‌خط (<b>_</b>) مجاز هستند. باید با یک حرف آغاز شود.</em>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>دکمه‌ی ارسال:</span><input type="text" name="submit" class="required" value="ارسال" maxlength="100" />
+					<strong><abbr title="الزامی">*</abbr></strong>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>دکمه‌ی ریست:</span><input type="text" name="reset" maxlength="100" />
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>تعداد ستون:</span><input type="text" name="cols" class="number" maxlength="1" />
+					<em>حداقل 1 و حداکثر 4</em>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>پیش‌نیاز:</span><input type="text" name="prereq" lang="en" maxlength="200" />
+					<em>نام فرم پیش‌نیاز. فقط حروف و ارقام انگلیسی و زیرین‌خط (<b>_</b>) مجاز هستند. باید با یک حرف آغاز شود.</em>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>بعدی:</span><input type="text" name="next" lang="en" maxlength="200" />
+					<em>نام فرم مرحله‌ی بعد. فقط حروف و ارقام انگلیسی و زیرین‌خط (<b>_</b>) مجاز هستند. باید با یک حرف آغاز شود.</em>
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="approval_needed" /><span>نیازمند تأیید مدیریت</span>
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="captcha" /><span>دارای تصویر امنیتی</span>
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="ref_id" /><span>تولید کد پیگیری</span>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>عمل پس از ثبت:</span><select name="on_success" class="has-params">
+						<option value="msg">فقط نمایش پیام</option>
+						<option value="msg-new">نمایش پیام و فرم جدید</option>
+						<option value="redir">تغییر مسیر</option>
+					</select>
+				</label>
+			</p>
+			<div class="opt-spec-params" data-input="on_success">
+				<div class="params" data-value="redir">
+					<p>
+						<label>
+							<span>آدرس (URL):</span><input type="text" name="redir_url" class="required" lang="en" maxlength="255" />
+							<strong><abbr title="الزامی">*</abbr></strong>
+						</label>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="section controls">
+			<h2>کنترل‌های فرم</h2>
+			<div class="controls-added"></div>
+			<div class="section add-control">
+				<h3>افزودن کنترل</h3>
+				<ul class="add-control-list">
+					<li><a href="#text">کادر متن</a></li>
+					<li><a href="#textarea">کادر متن چندخطی</a></li>
+					<li><a href="#radio">انتخاب چندگزینه‌ای</a></li>
+					<li><a href="#select">لیست انتخاب</a></li>
+					<li><a href="#select-slave">لیست انتخاب تابع</a></li>
+					<li><a href="#checkbox">چک‌باکس</a></li>
+					<li><a href="#checkbox-array">چک‌باکس گروهی</a></li>
+					<li><a href="#date">تاریخ</a></li>
+					<li><a href="#time">ساعت</a></li>
+					<li><a href="#datetime">تاریخ و ساعت</a></li>
+					<li><a href="#file">فایل</a></li>
+					<li><a href="#heading">زیرعنوان</a></li>
+					<li><a href="#paragraph">توضیحات</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="section submit">
+			<button type="submit" class="create">ایجاد فرم</button>
+			<button type="submit" class="update">به‌روزرسانی</button>
+			<p>&nbsp;</p>
+		</div>
+	</div>
+	<div class="proto">
+		<div class="section fieldset control" data-type="text">
+			<h3>کادر متن</h3>
+			<p>
+				<label>
+					<span>عنوان:</span><input type="text" name="label" class="required" maxlength="100" />
+					<strong><abbr title="الزامی">*</abbr></strong>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>نام:</span><input type="text" name="name" lang="en" maxlength="200" />
+					<em>فقط حروف و ارقام انگلیسی، خط پیوند (<b>-</b>) و زیرین‌خط (<b>_</b>) مجاز هستند. باید با یک حرف آغاز شود.</em>
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="required" /><span>الزامی</span>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>متن پیش‌فرض:</span><input type="text" name="def" maxlength="255" />
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>اعتبارسنجی:</span><select name="validation" class="has-params">
+						<option value="">هیچ</option>
+						<option value="email">ایمیل</option>
+						<option value="url">آدرس اینترنتی (URL)</option>
+						<option value="farsi-word">کلمه‌ی فارسی</option>
+						<option value="farsi-text">متن فارسی</option>
+						<option value="integer">عدد صحیح</option>
+						<option value="decimal">عدد اعشاری</option>
+						<option value="mobile">شماره موبایل</option>
+						<option value="tel">شماره تلفن</option>
+						<option value="postal-code">کد پستی (ده رقمی)</option>
+						<option value="ssn">شماره ملی</option>
+						<option value="pbn">شماره شناسنامه</option>
+						<option value="num-code">کد عددی</option>
+						<option value="regexp">عبارت باقاعده (پیشرفته)</option>
+					</select>
+				</label>
+			</p>
+			<div class="opt-spec-params" data-input="validation">
+				<div class="params" data-value="">
+					<p>
+						<label>
+							<span>حداکثر طول متن:</span><input type="text" name="max_len" class="number" maxlength="3" />
+							<em>حداکثر 255</em>
+						</label>
+					</p>
+					<p>
+						<label>
+							<input type="checkbox" name="ltr" /><span>چب به راست</span>
+						</label>
+					</p>
+				</div>
+				<div class="params" data-value="farsi-word farsi-text">
+					<p>
+						<label>
+							<span>حداکثر طول متن:</span><input type="text" name="max_len" class="number" maxlength="3" />
+							<em>حداکثر 255</em>
+						</label>
+					</p>
+				</div>
+				<div class="params" data-value="integer">
+					<p>
+						<label>
+							<span>حداقل:</span><input type="text" name="min" class="number" value="0" maxlength="20" />
+						</label>
+					</p>
+					<p>
+						<label>
+							<span>حداکثر:</span><input type="text" name="max" class="number" maxlength="20" />
+						</label>
+					</p>
+				</div>
+				<div class="params" data-value="decimal">
+					<p>
+						<label><span>بازه:</span></label><span class="multi-inp"><select name="min_inc" class="number">
+								<option value="">بزرگتر از</option>
+								<option value="1">بزرگتر از یا مساوی با</option>
+							</select>
+							<input type="text" name="min" class="number" value="0" size="12" maxlength="20" />
+							و
+							<select name="max_inc" class="number">
+								<option value="">کوچکتر از</option>
+								<option value="1">کوچکتر از یا مساوی با</option>
+							</select>
+							<input type="text" name="max" class="number" size="12" maxlength="20" />
+						</span>
+					</p>
+				</div>
+				<div class="params" data-value="num-code">
+					<p>
+						<label>
+							<span>تعداد ارقام:</span><input type="text" name="digits" class="number" maxlength="3" />
+							<em>حداکثر 255</em>
+						</label>
+					</p>
+					<p>
+						<label>
+							<input type="checkbox" name="no_leading_zero" /><span>رقم اول نمی‌تواند صفر باشد</span>
+						</label>
+					</p>
+				</div>
+				<div class="params" data-value="regexp">
+					<p>
+						<label>
+							<span>عبارت باقاعده:</span><input type="text" name="regexp" class="required" lang="en" />
+							<strong><abbr title="الزامی">*</abbr></strong>
+							<em>مانند <b dir="ltr">^[a-z]+$</b></em>
+						</label>
+					</p>
+					<p>
+						<label>
+							<input type="checkbox" name="case_insensitive" /><span>غیرحساس به حروف کوچک و بزرگ لاتین</span>
+						</label>
+					</p>
+					<p>
+						<label>
+							<span>توضیحات:</span><input type="text" name="description" />
+						</label>
+					</p>
+					<p>
+						<label>
+							<span>حداکثر طول متن:</span><input type="text" name="max_len" class="number" maxlength="3" />
+							<em>حداکثر 255</em>
+						</label>
+					</p>
+					<p>
+						<label>
+							<input type="checkbox" name="ltr" /><span>چب به راست</span>
+						</label>
+					</p>
+				</div>
+			</div>
+			<div class="toolbox">
+				<a class="icon" href="#add-control" title="افزودن کنترل..."></a>
+				<a class="icon" href="#remove-control" title="حذف کنترل"></a>
+				<a class="icon" href="#up-control" title="انتقال کنترل به بالا"></a>
+				<a class="icon" href="#down-control" title="انتقال کنترل به پایین"></a>
+			</div>
+		</div>
+		<div class="section fieldset control" data-type="textarea">
+			<h3>کادر متن چندخطی</h3>
+			<p>
+				<label>
+					<span>عنوان:</span><input type="text" name="label" class="required" maxlength="100" />
+					<strong><abbr title="الزامی">*</abbr></strong>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>نام:</span><input type="text" name="name" lang="en" maxlength="200" />
+					<em>فقط حروف و ارقام انگلیسی، خط پیوند (<b>-</b>) و زیرین‌خط (<b>_</b>) مجاز هستند. باید با یک حرف آغاز شود.</em>
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="required" /><span>الزامی</span>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>متن پیش‌فرض:</span><textarea name="def"></textarea>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>اعتبارسنجی:</span><select name="validation" class="has-params">
+						<option value="">هیچ</option>
+						<option value="farsi-text">متن فارسی</option>
+						<option value="regexp">عبارت باقاعده (پیشرفته)</option>
+					</select>
+				</label>
+			</p>
+			<div class="opt-spec-params" data-input="validation">
+				<div class="params" data-value="">
+					<p>
+						<label>
+							<span>حداکثر طول متن:</span><input type="text" name="max_len" class="number" maxlength="10" />
+						</label>
+					</p>
+					<p>
+						<label>
+							<input type="checkbox" name="ltr" /><span>چب به راست</span>
+						</label>
+					</p>
+				</div>
+				<div class="params" data-value="farsi-text">
+					<p>
+						<label>
+							<span>حداکثر طول متن:</span><input type="text" name="max_len" class="number" maxlength="10" />
+						</label>
+					</p>
+				</div>
+				<div class="params" data-value="regexp">
+					<p>
+						<label>
+							<span>عبارت باقاعده:</span><input type="text" name="regexp" class="required" lang="en" />
+							<strong><abbr title="الزامی">*</abbr></strong>
+							<em>مانند <b dir="ltr">^[a-z]+$</b></em>
+						</label>
+					</p>
+					<p>
+						<label>
+							<input type="checkbox" name="case_insensitive" /><span>غیرحساس به حروف کوچک و بزرگ لاتین</span>
+						</label>
+					</p>
+					<p>
+						<label>
+							<span>توضیحات:</span><input type="text" name="description" />
+						</label>
+					</p>
+					<p>
+						<label>
+							<span>حداکثر طول متن:</span><input type="text" name="max_len" class="number" maxlength="10" />
+						</label>
+					</p>
+					<p>
+						<label>
+							<input type="checkbox" name="ltr" /><span>چب به راست</span>
+						</label>
+					</p>
+				</div>
+			</div>
+			<div class="toolbox">
+				<a class="icon" href="#add-control" title="افزودن کنترل..."></a>
+				<a class="icon" href="#remove-control" title="حذف کنترل"></a>
+				<a class="icon" href="#up-control" title="انتقال کنترل به بالا"></a>
+				<a class="icon" href="#down-control" title="انتقال کنترل به پایین"></a>
+			</div>
+		</div>
+		<div class="section fieldset control" data-type="radio">
+			<h3>انتخاب چندگزینه‌ای</h3>
+			<p>
+				<label>
+					<span>عنوان:</span><input type="text" name="label" class="required" maxlength="100" />
+					<strong><abbr title="الزامی">*</abbr></strong>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>نام:</span><input type="text" name="name" lang="en" maxlength="200" />
+					<em>فقط حروف و ارقام انگلیسی، خط پیوند (<b>-</b>) و زیرین‌خط (<b>_</b>) مجاز هستند. باید با یک حرف آغاز شود.</em>
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="required" /><span>الزامی</span>
+				</label>
+			</p>
+			<div class="options">
+				<h4>گزینه‌ها</h4>
+				<ul>
+					<li>
+						<div class="wrapper">
+							<p>
+								<label>
+									<span>عنوان:</span><input type="text" name="label" class="required" maxlength="100" />
+									<strong><abbr title="الزامی">*</abbr></strong>
+								</label>
+							</p>
+							<p>
+								<label>
+									<span>مقدار:</span><input type="text" name="value" maxlength="200" />
+								</label>
+							</p>
+							<div class="toolbox">
+								<a class="icon" href="#default" title="گزینه‌ی پیش‌فرض"></a>
+								<a class="icon" href="#add-option" title="افزودن گزینه"></a>
+								<a class="icon" href="#remove-option" title="حذف گزینه"></a>
+								<a class="icon" href="#up-option" title="انتقال گزینه به بالا"></a>
+								<a class="icon" href="#down-option" title="انتقال گزینه به پایین"></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="wrapper">
+							<p>
+								<label>
+									<span>عنوان:</span><input type="text" name="label" class="required" maxlength="100" />
+									<strong><abbr title="الزامی">*</abbr></strong>
+								</label>
+							</p>
+							<p>
+								<label>
+									<span>مقدار:</span><input type="text" name="value" maxlength="200" />
+								</label>
+							</p>
+							<div class="toolbox">
+								<a class="icon" href="#default" title="گزینه‌ی پیش‌فرض"></a>
+								<a class="icon" href="#add-option" title="افزودن گزینه"></a>
+								<a class="icon" href="#remove-option" title="حذف گزینه"></a>
+								<a class="icon" href="#up-option" title="انتقال گزینه به بالا"></a>
+								<a class="icon" href="#down-option" title="انتقال گزینه به پایین"></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="toolbox">
+				<a class="icon" href="#add-control" title="افزودن کنترل..."></a>
+				<a class="icon" href="#remove-control" title="حذف کنترل"></a>
+				<a class="icon" href="#up-control" title="انتقال کنترل به بالا"></a>
+				<a class="icon" href="#down-control" title="انتقال کنترل به پایین"></a>
+			</div>
+		</div>
+		<div class="section fieldset control" data-type="select">
+			<h3>لیست انتخاب</h3>
+			<p>
+				<label>
+					<span>عنوان:</span><input type="text" name="label" class="required" maxlength="100" />
+					<strong><abbr title="الزامی">*</abbr></strong>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>نام:</span><input type="text" name="name" lang="en" maxlength="200" />
+					<em>فقط حروف و ارقام انگلیسی، خط پیوند (<b>-</b>) و زیرین‌خط (<b>_</b>) مجاز هستند. باید با یک حرف آغاز شود.</em>
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="has_null_opt" class="has-params" /><span>دارای گزینه‌ی <i>هیچ</i> (گزینه‌ی اول)</span>
+				</label>
+			</p>
+			<div class="opt-spec-params" data-input="has_null_opt">
+				<div class="params" data-value="1">
+					<p>
+						<label>
+							<span>عنوان گزینه‌ی <i>هیچ</i>:</span><input type="text" name="null_opt_label" maxlength="100" />
+						</label>
+					</p>
+				</div>
+			</div>
+			<p>
+				<label>
+					<input type="checkbox" name="required" /><span>الزامی</span>
+				</label>
+			</p>
+			<div class="options">
+				<h4>گزینه‌ها</h4>
+				<ul>
+					<li>
+						<div class="wrapper">
+							<p>
+								<label>
+									<span>عنوان:</span><input type="text" name="label" class="required" maxlength="100" />
+									<strong><abbr title="الزامی">*</abbr></strong>
+								</label>
+							</p>
+							<p>
+								<label>
+									<span>مقدار:</span><input type="text" name="value" maxlength="200" />
+								</label>
+							</p>
+							<div class="toolbox">
+								<a class="icon" href="#add-option" title="افزودن گزینه"></a>
+								<a class="icon" href="#remove-option" title="حذف گزینه"></a>
+								<a class="icon" href="#up-option" title="انتقال گزینه به بالا"></a>
+								<a class="icon" href="#down-option" title="انتقال گزینه به پایین"></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="wrapper">
+							<p>
+								<label>
+									<span>عنوان:</span><input type="text" name="label" class="required" maxlength="100" />
+									<strong><abbr title="الزامی">*</abbr></strong>
+								</label>
+							</p>
+							<p>
+								<label>
+									<span>مقدار:</span><input type="text" name="value" maxlength="200" />
+								</label>
+							</p>
+							<div class="toolbox">
+								<a class="icon" href="#add-option" title="افزودن گزینه"></a>
+								<a class="icon" href="#remove-option" title="حذف گزینه"></a>
+								<a class="icon" href="#up-option" title="انتقال گزینه به بالا"></a>
+								<a class="icon" href="#down-option" title="انتقال گزینه به پایین"></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="toolbox">
+				<a class="icon" href="#add-control" title="افزودن کنترل..."></a>
+				<a class="icon" href="#remove-control" title="حذف کنترل"></a>
+				<a class="icon" href="#up-control" title="انتقال کنترل به بالا"></a>
+				<a class="icon" href="#down-control" title="انتقال کنترل به پایین"></a>
+			</div>
+		</div>
+		<div class="section fieldset control" data-type="select-slave">
+			<h3>لیست انتخاب تابع</h3>
+			<p>
+				<label>
+					<span>عنوان:</span><input type="text" name="label" class="required" maxlength="100" />
+					<strong><abbr title="الزامی">*</abbr></strong>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>نام:</span><input type="text" name="name" lang="en" maxlength="200" />
+					<em>فقط حروف و ارقام انگلیسی، خط پیوند (<b>-</b>) و زیرین‌خط (<b>_</b>) مجاز هستند. باید با یک حرف آغاز شود.</em>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>متبوع:</span><input type="text" name="master_name" class="required" lang="en" maxlength="200" />
+					<strong><abbr title="الزامی">*</abbr></strong>
+					<em>نام لیست انتخاب متبوع</em>
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="has_null_opt" class="has-params" /><span>دارای گزینه‌ی <i>هیچ</i> (گزینه‌ی اول)</span>
+				</label>
+			</p>
+			<div class="opt-spec-params" data-input="has_null_opt">
+				<div class="params" data-value="1">
+					<p>
+						<label>
+							<span>عنوان گزینه‌ی <i>هیچ</i>:</span><input type="text" name="null_opt_label" maxlength="100" />
+						</label>
+					</p>
+				</div>
+			</div>
+			<p>
+				<label>
+					<input type="checkbox" name="required" /><span>الزامی</span>
+				</label>
+			</p>
+			<div class="select-slave-options">
+				<a class="icon" href="#refresh-options" title="بازسازی گزینه‌ها"></a><h4>گزینه‌ها</h4>
+			</div>
+			<div class="option-sets">
+			</div>
+			<div class="toolbox">
+				<a class="icon" href="#add-control" title="افزودن کنترل..."></a>
+				<a class="icon" href="#remove-control" title="حذف کنترل"></a>
+				<a class="icon" href="#up-control" title="انتقال کنترل به بالا"></a>
+				<a class="icon" href="#down-control" title="انتقال کنترل به پایین"></a>
+			</div>
+		</div>
+		<div class="section fieldset control" data-type="checkbox">
+			<h3>چک‌باکس</h3>
+			<p>
+				<label>
+					<span>عنوان:</span><input type="text" name="label" class="required" />
+					<strong><abbr title="الزامی">*</abbr></strong>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>نام:</span><input type="text" name="name" lang="en" maxlength="200" />
+					<em>فقط حروف و ارقام انگلیسی، خط پیوند (<b>-</b>) و زیرین‌خط (<b>_</b>) مجاز هستند. باید با یک حرف آغاز شود.</em>
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="def" /><span>انتخاب‌شده به صورت پیش‌فرض</span>
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="required" /><span>الزامی</span>
+				</label>
+			</p>
+			<div class="toolbox">
+				<a class="icon" href="#add-control" title="افزودن کنترل..."></a>
+				<a class="icon" href="#remove-control" title="حذف کنترل"></a>
+				<a class="icon" href="#up-control" title="انتقال کنترل به بالا"></a>
+				<a class="icon" href="#down-control" title="انتقال کنترل به پایین"></a>
+			</div>
+		</div>
+		<div class="section fieldset control" data-type="checkbox-array">
+			<h3>چک‌باکس گروهی</h3>
+			<p>
+				<label>
+					<span>عنوان:</span><input type="text" name="label" class="required" maxlength="100" />
+					<strong><abbr title="الزامی">*</abbr></strong>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>نام:</span><input type="text" name="name" lang="en" maxlength="200" />
+					<em>فقط حروف و ارقام انگلیسی، خط پیوند (<b>-</b>) و زیرین‌خط (<b>_</b>) مجاز هستند. باید با یک حرف آغاز شود.</em>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>حداقل انتخاب‌ها:</span><input type="text" name="min" class="number" maxlength="10" />
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>حداکثر انتخاب‌ها:</span><input type="text" name="max" class="number" maxlength="10" />
+					<em>حداقل 2</em>
+				</label>
+			</p>
+			<div class="options">
+				<h4>گزینه‌ها</h4>
+				<ul>
+					<li>
+						<div class="wrapper">
+							<p>
+								<label>
+									<span>عنوان:</span><input type="text" name="label" class="required" maxlength="100" />
+									<strong><abbr title="الزامی">*</abbr></strong>
+								</label>
+							</p>
+							<p>
+								<label>
+									<span>مقدار:</span><input type="text" name="value" maxlength="200" />
+								</label>
+							</p>
+							<div class="toolbox">
+								<a class="icon" href="#default" title="گزینه‌ی پیش‌فرض"></a>
+								<a class="icon" href="#add-option" title="افزودن گزینه"></a>
+								<a class="icon" href="#remove-option" title="حذف گزینه"></a>
+								<a class="icon" href="#up-option" title="انتقال گزینه به بالا"></a>
+								<a class="icon" href="#down-option" title="انتقال گزینه به پایین"></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="wrapper">
+							<p>
+								<label>
+									<span>عنوان:</span><input type="text" name="label" class="required" maxlength="100" />
+									<strong><abbr title="الزامی">*</abbr></strong>
+								</label>
+							</p>
+							<p>
+								<label>
+									<span>مقدار:</span><input type="text" name="value" maxlength="200" />
+								</label>
+							</p>
+							<div class="toolbox">
+								<a class="icon" href="#default" title="گزینه‌ی پیش‌فرض"></a>
+								<a class="icon" href="#add-option" title="افزودن گزینه"></a>
+								<a class="icon" href="#remove-option" title="حذف گزینه"></a>
+								<a class="icon" href="#up-option" title="انتقال گزینه به بالا"></a>
+								<a class="icon" href="#down-option" title="انتقال گزینه به پایین"></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="toolbox">
+				<a class="icon" href="#add-control" title="افزودن کنترل..."></a>
+				<a class="icon" href="#remove-control" title="حذف کنترل"></a>
+				<a class="icon" href="#up-control" title="انتقال کنترل به بالا"></a>
+				<a class="icon" href="#down-control" title="انتقال کنترل به پایین"></a>
+			</div>
+		</div>
+		<div class="section fieldset control" data-type="date">
+			<h3>تاریخ</h3>
+			<p>
+				<label>
+					<span>عنوان:</span><input type="text" name="label" class="required" maxlength="100" />
+					<strong><abbr title="الزامی">*</abbr></strong>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>نام:</span><input type="text" name="name" lang="en" maxlength="200" />
+					<em>فقط حروف و ارقام انگلیسی، خط پیوند (<b>-</b>) و زیرین‌خط (<b>_</b>) مجاز هستند. باید با یک حرف آغاز شود.</em>
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="required" /><span>الزامی</span>
+				</label>
+			</p>
+			<p>
+				<label><span>تاریخ پیش‌فرض:</span></label><span class="multi-inp date"><select name="def.d" class="number d" title="روز">
+						<option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+					</select>
+					<select name="def.m" class="number m" title="ماه">
+						<option value=""></option><option value="1">فروردین</option><option value="2">اردیبهشت</option><option value="3">خرداد</option><option value="4">تیر</option><option value="5">مرداد</option><option value="6">شهریور</option><option value="7">مهر</option><option value="8">آبان</option><option value="9">آذر</option><option value="10">دی</option><option value="11">بهمن</option><option value="12">اسفند</option>
+					</select>
+					<input type="text" name="def.y" class="number y" title="سال؛ مانند 1390" size="4" maxlength="4" />
+				</span>
+			</p>
+			<p>
+				<label>
+					<span>اعتبارسنجی:</span><select name="validation" class="has-params">
+						<option value="">هیچ</option>
+						<option value="past">گذشته</option>
+						<option value="past-now">گذشته یا حال</option>
+						<option value="future">آینده</option>
+						<option value="future-now">آینده یا حال</option>
+						<option value="range">بازه‌ی مشخص</option>
+					</select>
+				</label>
+			</p>
+			<div class="opt-spec-params" data-input="validation">
+				<div class="params" data-value="range">
+					<p>
+						<label>
+							<span>آغاز بازه:</span><select name="from" class="has-params">
+								<option value="">نامشخص</option>
+								<option value="now-inc">از تاریخ جاری</option>
+								<option value="now-exc">پس از تاریخ جاری</option>
+								<option value="value">از تاریخ مشخص</option>
+							</select>
+						</label>
+					</p>
+					<div class="opt-spec-params" data-input="from">
+						<div class="params" data-value="value">
+							<p>
+								<label><span>تاریخ آغاز بازه:</span></label><span class="multi-inp date required"><select name="from_value.d" class="number d" title="روز">
+										<option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+									</select>
+									<select name="from_value.m" class="number m" title="ماه">
+										<option value=""></option><option value="1">فروردین</option><option value="2">اردیبهشت</option><option value="3">خرداد</option><option value="4">تیر</option><option value="5">مرداد</option><option value="6">شهریور</option><option value="7">مهر</option><option value="8">آبان</option><option value="9">آذر</option><option value="10">دی</option><option value="11">بهمن</option><option value="12">اسفند</option>
+									</select>
+									<input type="text" name="from_value.y" class="number y" title="سال؛ مانند 1390" size="4" maxlength="4" />
+								</span>
+								<strong><abbr title="الزامی">*</abbr></strong>
+							</p>
+						</div>
+					</div>
+					<p>
+						<label>
+							<span>انتهای بازه:</span><select name="to" class="has-params">
+								<option value="">نامشخص</option>
+								<option value="now-inc">تا تاریخ جاری</option>
+								<option value="now-exc">تا پیش از تاریخ جاری</option>
+								<option value="value">تا تاریخ مشخص</option>
+							</select>
+						</label>
+					</p>
+					<div class="opt-spec-params" data-input="to">
+						<div class="params" data-value="value">
+							<p>
+								<label><span>تاریخ انتهای بازه:</span></label><span class="multi-inp date required"><select name="to_value.d" class="number d" title="روز">
+										<option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+									</select>
+									<select name="to_value.m" class="number m" title="ماه">
+										<option value=""></option><option value="1">فروردین</option><option value="2">اردیبهشت</option><option value="3">خرداد</option><option value="4">تیر</option><option value="5">مرداد</option><option value="6">شهریور</option><option value="7">مهر</option><option value="8">آبان</option><option value="9">آذر</option><option value="10">دی</option><option value="11">بهمن</option><option value="12">اسفند</option>
+									</select>
+									<input type="text" name="to_value.y" class="number y" title="سال؛ مانند 1390" size="4" maxlength="4" />
+								</span>
+								<strong><abbr title="الزامی">*</abbr></strong>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="toolbox">
+				<a class="icon" href="#add-control" title="افزودن کنترل..."></a>
+				<a class="icon" href="#remove-control" title="حذف کنترل"></a>
+				<a class="icon" href="#up-control" title="انتقال کنترل به بالا"></a>
+				<a class="icon" href="#down-control" title="انتقال کنترل به پایین"></a>
+			</div>
+		</div>
+		<div class="section fieldset control" data-type="time">
+			<h3>ساعت</h3>
+			<p>
+				<label>
+					<span>عنوان:</span><input type="text" name="label" class="required" maxlength="100" />
+					<strong><abbr title="الزامی">*</abbr></strong>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>نام:</span><input type="text" name="name" lang="en" maxlength="200" />
+					<em>فقط حروف و ارقام انگلیسی، خط پیوند (<b>-</b>) و زیرین‌خط (<b>_</b>) مجاز هستند. باید با یک حرف آغاز شود.</em>
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="required" /><span>الزامی</span>
+				</label>
+			</p>
+			<p>
+				<label><span>زمان پیشفرض:</span></label><span class="multi-inp time"><select name="def.n" class="number n" title="دقیقه">
+						<option value=""></option><option value="0">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option>
+					</select>
+					:
+					<select name="def.h" class="number h" title="ساعت">
+						<option value=""></option><option value="0">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option>
+					</select>
+				</span>
+			</p>
+			<div class="toolbox">
+				<a class="icon" href="#add-control" title="افزودن کنترل..."></a>
+				<a class="icon" href="#remove-control" title="حذف کنترل"></a>
+				<a class="icon" href="#up-control" title="انتقال کنترل به بالا"></a>
+				<a class="icon" href="#down-control" title="انتقال کنترل به پایین"></a>
+			</div>
+		</div>
+		<div class="section fieldset control" data-type="datetime">
+			<h3>تاریخ و ساعت</h3>
+			<p>
+				<label>
+					<span>عنوان:</span><input type="text" name="label" class="required" maxlength="100" />
+					<strong><abbr title="الزامی">*</abbr></strong>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>نام:</span><input type="text" name="name" lang="en" maxlength="200" />
+					<em>فقط حروف و ارقام انگلیسی، خط پیوند (<b>-</b>) و زیرین‌خط (<b>_</b>) مجاز هستند. باید با یک حرف آغاز شود.</em>
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="required" /><span>الزامی</span>
+				</label>
+			</p>
+			<p>
+				<label><span>زمان پیش‌فرض:</span></label><span class="multi-inp datetime"><select name="def.d" class="number d" title="روز">
+						<option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+					</select>
+					<select name="def.m" class="number m" title="ماه">
+						<option value=""></option><option value="1">فروردین</option><option value="2">اردیبهشت</option><option value="3">خرداد</option><option value="4">تیر</option><option value="5">مرداد</option><option value="6">شهریور</option><option value="7">مهر</option><option value="8">آبان</option><option value="9">آذر</option><option value="10">دی</option><option value="11">بهمن</option><option value="12">اسفند</option>
+					</select>
+					<input type="text" name="def.y" class="number y" title="سال؛ مانند 1390" size="4" maxlength="4" />
+					ساعت
+					<select name="def.n" class="number n" title="دقیقه">
+						<option value=""></option><option value="0">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option>
+					</select>
+					:
+					<select name="def.h" class="number h" title="ساعت">
+						<option value=""></option><option value="0">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option>
+					</select>
+				</span>
+			</p>
+			<p>
+				<label>
+					<span>اعتبارسنجی:</span><select name="validation" class="has-params">
+						<option value="">هیچ</option>
+						<option value="past">گذشته</option>
+						<option value="past-now">گذشته یا حال</option>
+						<option value="future">آینده</option>
+						<option value="future-now">آینده یا حال</option>
+						<option value="range">بازه‌ی مشخص</option>
+					</select>
+				</label>
+			</p>
+			<div class="opt-spec-params" data-input="validation">
+				<div class="params" data-value="range">
+					<p>
+						<label>
+							<span>آغاز بازه:</span><select name="from" class="has-params">
+								<option value="">نامشخص</option>
+								<option value="now-inc">از زمان جاری</option>
+								<option value="now-exc">پس از زمان جاری</option>
+								<option value="value">از زمان مشخص</option>
+							</select>
+						</label>
+					</p>
+					<div class="opt-spec-params" data-input="from">
+						<div class="params" data-value="value">
+							<p>
+								<label><span>زمان آغاز بازه:</span></label><span class="multi-inp datetime required"><select name="from_value.d" class="number d" title="روز">
+										<option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+									</select>
+									<select name="from_value.m" class="number m" title="ماه">
+										<option value=""></option><option value="1">فروردین</option><option value="2">اردیبهشت</option><option value="3">خرداد</option><option value="4">تیر</option><option value="5">مرداد</option><option value="6">شهریور</option><option value="7">مهر</option><option value="8">آبان</option><option value="9">آذر</option><option value="10">دی</option><option value="11">بهمن</option><option value="12">اسفند</option>
+									</select>
+									<input type="text" name="from_value.y" class="number y" title="سال؛ مانند 1390" size="4" maxlength="4" />
+									ساعت
+									<select name="from_value.n" class="number n" title="دقیقه">
+										<option value=""></option><option value="0">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option>
+									</select>
+									:
+									<select name="from_value.h" class="number h" title="ساعت">
+										<option value=""></option><option value="0">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option>
+									</select>
+								</span>
+								<strong><abbr title="الزامی">*</abbr></strong>
+							</p>
+						</div>
+					</div>
+					<p>
+						<label>
+							<span>انتهای بازه:</span><select name="to" class="has-params">
+								<option value="">نامشخص</option>
+								<option value="now-inc">تا زمان جاری</option>
+								<option value="now-exc">تا پیش از زمان جاری</option>
+								<option value="value">تا زمان مشخص</option>
+							</select>
+						</label>
+					</p>
+					<div class="opt-spec-params" data-input="to">
+						<div class="params" data-value="value">
+							<p>
+								<label><span>زمان انتهای بازه:</span></label><span class="multi-inp datetime required"><select name="to_value.d" class="number d" title="روز">
+										<option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+									</select>
+									<select name="to_value.m" class="number m" title="ماه">
+										<option value=""></option><option value="1">فروردین</option><option value="2">اردیبهشت</option><option value="3">خرداد</option><option value="4">تیر</option><option value="5">مرداد</option><option value="6">شهریور</option><option value="7">مهر</option><option value="8">آبان</option><option value="9">آذر</option><option value="10">دی</option><option value="11">بهمن</option><option value="12">اسفند</option>
+									</select>
+									<input type="text" name="to_value.y" class="number y" title="سال؛ مانند 1390" size="4" maxlength="4" />
+									ساعت
+									<select name="to_value.n" class="number n" title="دقیقه">
+										<option value=""></option><option value="0">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option>
+									</select>
+									:
+									<select name="to_value.h" class="number h" title="ساعت">
+										<option value=""></option><option value="0">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option>
+									</select>
+								</span>
+								<strong><abbr title="الزامی">*</abbr></strong>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="toolbox">
+				<a class="icon" href="#add-control" title="افزودن کنترل..."></a>
+				<a class="icon" href="#remove-control" title="حذف کنترل"></a>
+				<a class="icon" href="#up-control" title="انتقال کنترل به بالا"></a>
+				<a class="icon" href="#down-control" title="انتقال کنترل به پایین"></a>
+			</div>
+		</div>
+		<div class="section fieldset control" data-type="file">
+			<h3>فایل</h3>
+			<p>
+				<label>
+					<span>عنوان:</span><input type="text" name="label" class="required" maxlength="100" />
+					<strong><abbr title="الزامی">*</abbr></strong>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>نام:</span><input type="text" name="name" lang="en" maxlength="200" />
+					<em>فقط حروف و ارقام انگلیسی، خط پیوند (<b>-</b>) و زیرین‌خط (<b>_</b>) مجاز هستند. باید با یک حرف آغاز شود.</em>
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="required" /><span>الزامی</span>
+				</label>
+			</p>
+			<p>
+				<label><span>حداکثر حجم فایل:</span></label><span class="multi-inp"><input type="text" name="max_file_size" class="number" maxlength="10" />
+					<select class="unit">
+						<option value="b">بایت</option>
+						<option value="kb">کیلوبایت</option>
+						<option value="mb">مگابایت</option>
+						<option value="gb">گیگابایت</option>
+					</select>
+				</span>
+			</p>
+			<h4>فرمت مجاز</h4>
+			<p>
+				فرمت‌های از پیش تعریف شده:
+				<a href="#predef-file-format" data-exts="jpg;jpeg;png">عکس</a> |
+				<a href="#predef-file-format" data-exts="zip;rar">فشرده</a> |
+				<a href="#predef-file-format" data-exts="pdf;doc;docx;rtf;txt;xls;xlsx;pps;ppsx;ppt;pptx">سند</a> |
+				<a href="#predef-file-format" data-exts="pdf;doc;docx;rtf;txt">سند متنی</a>
+			</p>
+			<p>
+				<label>
+					<span>پسوندهای مجاز:</span><input type="text" name="valid_exts" lang="en" />
+					<em>با نقطه‌ویرگول (<b>;</b>) جدا کنید.</em>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>توضیحات:</span><input type="text" name="description" />
+				</label>
+			</p>
+			<div class="toolbox">
+				<a class="icon" href="#add-control" title="افزودن کنترل..."></a>
+				<a class="icon" href="#remove-control" title="حذف کنترل"></a>
+				<a class="icon" href="#up-control" title="انتقال کنترل به بالا"></a>
+				<a class="icon" href="#down-control" title="انتقال کنترل به پایین"></a>
+			</div>
+		</div>
+		<div class="section fieldset control" data-type="heading">
+			<h3>زیرعنوان</h3>
+			<p>
+				<label>
+					<span>عنوان:</span><input type="text" name="title" class="required" maxlength="100" />
+					<strong><abbr title="الزامی">*</abbr></strong>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>سطح:</span><select name="level" class="number">
+						<option value="2">دوم</option>
+						<option value="3">سوم</option>
+						<option value="4">چهارم</option>
+					</select>
+				</label>
+			</p>
+			<div class="toolbox">
+				<a class="icon" href="#add-control" title="افزودن کنترل..."></a>
+				<a class="icon" href="#remove-control" title="حذف کنترل"></a>
+				<a class="icon" href="#up-control" title="انتقال کنترل به بالا"></a>
+				<a class="icon" href="#down-control" title="انتقال کنترل به پایین"></a>
+			</div>
+		</div>
+		<div class="section fieldset control" data-type="paragraph">
+			<h3>توضیحات</h3>
+			<p>
+				<label>
+					<span>متن:</span><textarea name="text" class="required"></textarea>
+					<strong><abbr title="الزامی">*</abbr></strong>
+				</label>
+			</p>
+			<div class="toolbox">
+				<a class="icon" href="#add-control" title="افزودن کنترل..."></a>
+				<a class="icon" href="#remove-control" title="حذف کنترل"></a>
+				<a class="icon" href="#up-control" title="انتقال کنترل به بالا"></a>
+				<a class="icon" href="#down-control" title="انتقال کنترل به پایین"></a>
+			</div>
+		</div>
+	</div>
+</form>
